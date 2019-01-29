@@ -9,7 +9,7 @@
       <md-ripple>
         <md-card-header>
           <div class="md-title">{{ m.name }}</div>
-          <div class="md-subhead">It also have a ripple</div>
+          <!-- <div class="md-subhead">{{ m.name }}</div> -->
           <md-chip
             v-for="tag in m.tags"
             :key="tag"
@@ -24,8 +24,7 @@
         </md-card-content>
 
         <md-card-actions>
-          <md-button>Get Model</md-button>
-          <md-button>Run</md-button>
+          <md-button target="_blank" :href="m.source">Get Model</md-button>
         </md-card-actions>
       </md-ripple>
     </md-card>
@@ -33,14 +32,15 @@
 </template>
 
 <script>
-const test_model = {
-  name: "Test Model",
-  tags: ["PyTorch", "Classification"],
+import axios from 'axios';
+
+const empty_model = {
+  name: "No Model Available",
+  tags: [],
   authors: [],
   citeAs: "",
   source: "",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.",
+  description:"",
   icon: ""
 };
 
@@ -48,10 +48,20 @@ export default {
   name: "ModelZoo",
   data() {
     return {
-      models: [test_model, test_model, test_model]
+      models: [empty_model]
     };
   },
-  mounted() {}
+  mounted() {
+    axios.get('https://cellprofiling.github.io/HPA-model-zoo/models-zoo-manifest.json').then(response => {
+      if (response && response.data && response.data.models) {
+        const manifest = response.data
+        const models = manifest.models.filter((p) => {
+          return !p.disabled
+        })
+        this.models = models
+      }
+    });
+  }
 };
 </script>
 

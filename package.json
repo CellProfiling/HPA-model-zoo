@@ -6,9 +6,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "npm run build && node src/deploy.js"
+    "deploy": "npm run build && node scripts/deploy.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "vue": "^2.5.21",
     "vue-material": "^1.0.0-beta-10.2"
   },
