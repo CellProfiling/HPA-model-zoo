@@ -5,7 +5,7 @@ module.exports = {
   runtimeCompiler: true,
   outputDir: './dist',
   assetsDir: 'static',
-  publicPath: 'HPA-model-zoo',
+  publicPath: process.env.NODE_ENV === 'production' ? '/HPA-model-zoo/' : '/',
   devServer: {
     compress: true,
     port: 8000
