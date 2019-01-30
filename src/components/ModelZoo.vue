@@ -24,10 +24,19 @@
         </md-card-content>
 
         <md-card-actions>
-          <md-button target="_blank" :href="m.source">Get Model</md-button>
+          <md-button @click="showDetails(m.name)">Details</md-button>
+          <md-button v-if="m.source" target="_blank" :href="m.source">Get Model</md-button>
         </md-card-actions>
       </md-ripple>
     </md-card>
+    <!-- <md-dialog :md-active.sync="showDetailsDialog" :md-click-outside-to-close="false" :md-close-on-esc="false">
+      <md-dialog-content>
+
+      </md-dialog-content>
+      <md-dialog-actions>
+        <md-button class="md-primary" @click="showDetailsDialog=false">Close</md-button>
+      </md-dialog-actions>
+    </md-dialog> -->
   </div>
 </template>
 
@@ -45,22 +54,26 @@ const empty_model = {
 };
 
 export default {
-  name: "ModelZoo",
+  name: "model-zoo",
   data() {
     return {
-      models: [empty_model]
+      models: [empty_model],
+      showDetailsDialog: false
     };
   },
+  created(){
+    this.store = this.$root.$data.store
+    this.store.getModels().then((models)=>{
+      this.models = models
+    })
+  },
   mounted() {
-    axios.get('https://cellprofiling.github.io/HPA-model-zoo/models-zoo-manifest.json').then(response => {
-      if (response && response.data && response.data.models) {
-        const manifest = response.data
-        const models = manifest.models.filter((p) => {
-          return !p.disabled
-        })
-        this.models = models
-      }
-    });
+  },
+  methods:{
+    showDetails(id){
+      let routeData = this.$router.resolve({path: '/model/'+id});
+      window.open(routeData.href, '_blank');
+    }
   }
 };
 </script>

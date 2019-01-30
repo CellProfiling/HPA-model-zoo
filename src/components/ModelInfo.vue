@@ -1,0 +1,80 @@
+<template>
+  <div class="md-layout md-gutter md-alignment-center">
+    <div style="padding-left: 10px; padding-right: 5px;" v-if="docs && docs.trim() !='' " v-html="marked(docs, { sanitize: true })"></div>
+      <h3 v-else> Oops, this model has no documentation!</h3>
+  </div>
+</template>
+
+<script>
+import axios from 'axios';
+
+import marked from 'marked';
+
+function getInfoUrl(url){
+  var repo = url.replace('https://github.com/', '')
+  return 'https://raw.githubusercontent.com/' + repo + '/master/README.md';
+}
+
+export default {
+  name: "model-info",
+  props: {
+    name: {
+      type: String,
+      default: null
+    }
+  },
+  data() {
+    return {
+      docs: '',
+      modelsById: null,
+      modelInfo: null
+    };
+  },
+  mounted() {
+    this.store = this.$root.$data.store
+    if(this.store.modelsById){
+      this.modelsById = this.store.modelsById
+      this.loadContent(this.modelsById, this.$route.params.id)
+    }
+    else{
+      this.store.getModels().then(()=>{
+        this.modelsById = this.store.modelsById
+
+        this.loadContent(this.modelsById, this.$route.params.id)
+      })
+    }
+  },
+  created(){
+    this.marked = marked
+
+  },
+  methods:{
+    loadContent(modelsById, id){
+      this.modelInfo = modelsById[id]
+      axios.get(getInfoUrl(this.modelInfo.source)).then(response => {
+        if (response && response.data) {
+          this.docs = response.data
+        }
+      });
+    }
+  }
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+.md-layout-item {
+  height: 280px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  transition: 0.3s $md-transition-stand-timing;
+
+  &:after {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: md-get-palette-color(purple, 200);
+    content: " ";
+  }
+}
+</style>

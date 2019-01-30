@@ -11,19 +11,15 @@
     </md-app-toolbar>
 
     <md-app-content>
-      <model-zoo />
+      <router-view></router-view>
     </md-app-content>
   </md-app>
 </template>
 
 <script>
-import ModelZoo from "./components/ModelZoo.vue";
 
 export default {
-  name: "app",
-  components: {
-    ModelZoo
-  }
+  name: "app"
 };
 </script>
 
