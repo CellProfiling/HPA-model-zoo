@@ -6,6 +6,7 @@ import "vue-material/dist/theme/default.css";
 import VueRouter from 'vue-router'
 import ModelZoo from "./components/ModelZoo.vue";
 import ModelInfo from "./components/ModelInfo.vue";
+import ManifestGenerator from "./components/ManifestGenerator.vue";
 import axios from 'axios';
 
 Vue.use(VueRouter);
@@ -14,13 +15,15 @@ Vue.use(VueMaterial);
 // register
 Vue.component('model-zoo', ModelZoo)
 Vue.component('model-info', ModelInfo)
+Vue.component('manifest-generator', ManifestGenerator)
 
 Vue.config.productionTip = false;
 
 
 const routes = [
   { path: '/', component: ModelZoo },
-  { path: '/model/:id', component: ModelInfo }
+  { path: '/model/:id', component: ModelInfo },
+  { path: '/generator', component: ManifestGenerator }
 ]
 
 const router = new VueRouter({
