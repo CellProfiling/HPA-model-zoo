@@ -61,7 +61,7 @@
         <md-progress-bar md-mode="indeterminate" v-if="sending" />
 
         <md-card-actions>
-          <md-button type="submit" class="md-primary" :disabled="sending">Create user</md-button>
+          <md-button type="submit" class="md-primary" :disabled="sending">Export user</md-button>
         </md-card-actions>
       </md-card>
 
@@ -71,6 +71,7 @@
 </template>
 
 <script>
+  import { saveAs } from 'file-saver'
   import { validationMixin } from 'vuelidate'
   import {
     required,
@@ -135,22 +136,23 @@
         this.form.gender = null
         this.form.email = null
       },
-      saveUser () {
+      exportUser () {
         this.sending = true
+        const user = JSON.stringify(this.form)
+        const blob = new Blob([user], {type: "text/plain;charset=utf-8"})
+        const FileSaver = require('file-saver')
+        FileSaver.saveAs(blob, "exported_user.json")
 
-        // Instead of this timeout, here you can call your API
-        window.setTimeout(() => {
-          this.lastUser = `${this.form.firstName} ${this.form.lastName}`
-          this.userSaved = true
-          this.sending = false
-          this.clearForm()
-        }, 1500)
+        this.lastUser = `${this.form.firstName} ${this.form.lastName}`
+        this.userSaved = true
+        this.sending = false
+        this.clearForm()
       },
       validateUser () {
         this.$v.$touch()
 
         if (!this.$v.$invalid) {
-          this.saveUser()
+          this.exportUser()
         }
       }
     }
