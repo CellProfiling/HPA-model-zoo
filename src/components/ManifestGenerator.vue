@@ -62,6 +62,7 @@
 
         <md-card-actions>
           <md-button type="submit" class="md-primary" :disabled="sending">Export user</md-button>
+          <md-button class="md-accent" v-on:click="clearForm()">Clear form</md-button>
         </md-card-actions>
       </md-card>
 
@@ -146,7 +147,6 @@
         this.lastUser = `${this.form.firstName} ${this.form.lastName}`
         this.userSaved = true
         this.sending = false
-        this.clearForm()
       },
       validateUser () {
         this.$v.$touch()
