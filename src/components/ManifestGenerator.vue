@@ -18,6 +18,17 @@
             </div>
 
             <div class="md-layout-item md-small-size-100">
+              <md-field :class="getValidationClass('source')">
+                <label for="source">Source</label>
+                <md-input name="source" id="source" autocomplete="url" v-model="form.source" :disabled="sending" />
+                <span class="md-error" v-if="!$v.form.source.required">The source is required</span>
+                <span class="md-error" v-else-if="!$v.form.source.url">Invalid source</span>
+              </md-field>
+            </div>
+          </div>
+
+          <div class="md-layout md-gutter">
+            <div class="md-layout-item md-small-size-100">
               <md-field :class="getValidationClass('author')">
                 <label for="author">Author</label>
                 <md-input name="author" id="author" autocomplete="family-name" v-model="form.author" :disabled="sending" />
@@ -25,24 +36,13 @@
                 <span class="md-error" v-else-if="!$v.form.author.minlength">Invalid author</span>
               </md-field>
             </div>
-          </div>
 
-          <div class="md-layout md-gutter">
             <div class="md-layout-item md-small-size-100">
               <md-field :class="getValidationClass('citeAs')">
                 <label for="cite-as">Cite as</label>
                 <md-input name="cite-as" id="cite-as" autocomplete="on" v-model="form.citeAs" :disabled="sending" />
                 <span class="md-error" v-if="!$v.form.citeAs.required">Cite as is required</span>
                 <span class="md-error" v-else-if="!$v.form.citeAs.minlength">Invalid cite as</span>
-              </md-field>
-            </div>
-
-            <div class="md-layout-item md-small-size-100">
-              <md-field :class="getValidationClass('source')">
-                <label for="source">Source</label>
-                <md-input name="source" id="source" autocomplete="url" v-model="form.source" :disabled="sending" />
-                <span class="md-error" v-if="!$v.form.source.required">The source is required</span>
-                <span class="md-error" v-else-if="!$v.form.source.url">Invalid source</span>
               </md-field>
             </div>
           </div>
@@ -81,20 +81,20 @@
             </div>
 
             <div class="md-layout-item md-small-size-100">
-              <md-field :class="getValidationClass('description')">
-                <label for="description">Description</label>
-                <md-input id="description" name="description" autocomplete="on" v-model="form.description" :disabled="sending" />
-                <span class="md-error" v-if="!$v.form.description.required">The description is required</span>
-                <span class="md-error" v-else-if="!$v.form.description.minlength">Invalid description</span>
+              <md-field :class="getValidationClass('icon')">
+                <label for="icon">Icon</label>
+                <md-input name="icon" id="icon" autocomplete="on" v-model="form.icon" :disabled="sending" />
+                <span class="md-error" v-if="!$v.form.icon.required">The icon is required</span>
+                <span class="md-error" v-else-if="!$v.form.icon.minlength">Invalid icon</span>
               </md-field>
             </div>
           </div>
 
-          <md-field :class="getValidationClass('icon')">
-            <label for="icon">Icon</label>
-            <md-input name="icon" id="icon" autocomplete="on" v-model="form.icon" :disabled="sending" />
-            <span class="md-error" v-if="!$v.form.icon.required">The icon is required</span>
-            <span class="md-error" v-else-if="!$v.form.icon.minlength">Invalid icon</span>
+          <md-field :class="getValidationClass('description')">
+            <label for="description">Description</label>
+            <md-input id="description" name="description" autocomplete="on" v-model="form.description" :disabled="sending" />
+            <span class="md-error" v-if="!$v.form.description.required">The description is required</span>
+            <span class="md-error" v-else-if="!$v.form.description.minlength">Invalid description</span>
           </md-field>
         </md-card-content>
 
