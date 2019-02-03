@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form novalidate class="md-layout md-gutter md-alignment-center" @submit.prevent="validateUser">
+    <form novalidate class="md-layout md-gutter md-alignment-center" @submit.prevent="validateManifest">
       <md-card class="md-layout-item md-size-50 md-small-size-100">
         <md-card-header>
           <div class="md-title">Model Manifest</div>
@@ -210,7 +210,7 @@
         this.formExported = true
         this.sending = false
       },
-      validateUser () {
+      validateManifest () {
         this.$v.$touch()
 
         if (!this.$v.$invalid) {
