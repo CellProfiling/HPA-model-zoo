@@ -13,7 +13,7 @@
                 <label for="model-name">Model name</label>
                 <md-input name="model-name" id="model-name" autocomplete="name" v-model="form.modelName" :disabled="sending" />
                 <span class="md-error" v-if="!$v.form.modelName.required">The model name is required</span>
-                <span class="md-error" v-else-if="!$v.form.modelName.minlength">Invalid model name</span>
+                <span class="md-error" v-else-if="!$v.form.modelName.minLength">Invalid model name</span>
               </md-field>
             </div>
 
@@ -33,7 +33,7 @@
                 <label for="author">Author</label>
                 <md-input name="author" id="author" autocomplete="family-name" v-model="form.author" :disabled="sending" />
                 <span class="md-error" v-if="!$v.form.author.required">The author is required</span>
-                <span class="md-error" v-else-if="!$v.form.author.minlength">Invalid author</span>
+                <span class="md-error" v-else-if="!$v.form.author.minLength">Invalid author</span>
               </md-field>
             </div>
 
@@ -42,27 +42,27 @@
                 <label for="cite-as">Cite as</label>
                 <md-input name="cite-as" id="cite-as" autocomplete="on" v-model="form.citeAs" :disabled="sending" />
                 <span class="md-error" v-if="!$v.form.citeAs.required">Cite as is required</span>
-                <span class="md-error" v-else-if="!$v.form.citeAs.minlength">Invalid cite as</span>
+                <span class="md-error" v-else-if="!$v.form.citeAs.minLength">Invalid cite as</span>
               </md-field>
             </div>
           </div>
 
           <div class="md-layout md-gutter">
             <div class="md-layout-item md-small-size-100">
-              <md-field :class="getValidationClass('scripts')">
+              <md-field :class="getValidationClass('scripts.train')">
                 <label for="train">Train script</label>
                 <md-input name="train" id="train" autocomplete="on" v-model="form.scripts.train" :disabled="sending" />
-                <span class="md-error" v-if="!$v.form.scripts.required">The train script is required</span>
-                <span class="md-error" v-else-if="!$v.form.scripts.minlength">Invalid train script</span>
+                <span class="md-error" v-if="!$v.form.scripts.train.required">The train script is required</span>
+                <span class="md-error" v-else-if="!$v.form.scripts.train.minLength">Invalid train script</span>
               </md-field>
             </div>
 
             <div class="md-layout-item md-small-size-100">
-              <md-field :class="getValidationClass('scripts')">
+              <md-field :class="getValidationClass('scripts.predict')">
                 <label for="predict">Predict script</label>
                 <md-input name="predict" id="predict" autocomplete="on" v-model="form.scripts.predict" :disabled="sending" />
-                <span class="md-error" v-if="!$v.form.scripts.required">The predict script is required</span>
-                <span class="md-error" v-else-if="!$v.form.scripts.minlength">Invalid predict script</span>
+                <span class="md-error" v-if="!$v.form.scripts.predict.required">The predict script is required</span>
+                <span class="md-error" v-else-if="!$v.form.scripts.predict.minLength">Invalid predict script</span>
               </md-field>
             </div>
           </div>
@@ -85,7 +85,7 @@
                 <label for="icon">Icon</label>
                 <md-input name="icon" id="icon" autocomplete="on" v-model="form.icon" :disabled="sending" />
                 <span class="md-error" v-if="!$v.form.icon.required">The icon is required</span>
-                <span class="md-error" v-else-if="!$v.form.icon.minlength">Invalid icon</span>
+                <span class="md-error" v-else-if="!$v.form.icon.minLength">Invalid icon</span>
               </md-field>
             </div>
           </div>
@@ -94,7 +94,7 @@
             <label for="description">Description</label>
             <md-input id="description" name="description" autocomplete="on" v-model="form.description" :disabled="sending" />
             <span class="md-error" v-if="!$v.form.description.required">The description is required</span>
-            <span class="md-error" v-else-if="!$v.form.description.minlength">Invalid description</span>
+            <span class="md-error" v-else-if="!$v.form.description.minLength">Invalid description</span>
           </md-field>
         </md-card-content>
 
@@ -161,8 +161,14 @@
           url: url()
         },
         scripts: {
-          required,
-          minLength: minLength(2)
+          train: {
+            required,
+            minLength: minLength(2)
+          },
+          predict: {
+            required,
+            minLength: minLength(2)
+          }
         },
         description: {
           required,
