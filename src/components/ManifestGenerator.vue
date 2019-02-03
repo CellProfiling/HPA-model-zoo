@@ -101,12 +101,12 @@
         <md-progress-bar md-mode="indeterminate" v-if="sending" />
 
         <md-card-actions>
-          <md-button type="submit" class="md-primary" :disabled="sending">Export user</md-button>
+          <md-button type="submit" class="md-primary" :disabled="sending">Export</md-button>
           <md-button class="md-accent" v-on:click="clearForm()">Clear form</md-button>
         </md-card-actions>
       </md-card>
 
-      <md-snackbar :md-active.sync="userSaved">The model {{ lastModel }} was saved with success!</md-snackbar>
+      <md-snackbar :md-active.sync="formExported">The model {{ lastModel }} was exported with success!</md-snackbar>
     </form>
   </div>
 </template>
@@ -138,7 +138,7 @@
         description: null,
         icon: null
       },
-      userSaved: false,
+      formExported: false,
       sending: false,
       lastUser: null
     }),
@@ -207,7 +207,7 @@
         FileSaver.saveAs(blob, "exported_user.json")
 
         this.lastModel = `${this.form.modelName} ${this.form.author}`
-        this.userSaved = true
+        this.formExported = true
         this.sending = false
       },
       validateUser () {
