@@ -70,7 +70,7 @@ function write_manifest(configs){
         }
       }
       else{
-        if(keys[configs[i].name]){
+        if(!keys[configs[i].name]){
           models_manifest.models.push(configs[i])
           keys[configs[i].name] = true
         }
