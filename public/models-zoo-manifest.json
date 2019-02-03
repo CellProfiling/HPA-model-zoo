@@ -1,39 +1,6 @@
 {
  "name": "HPA Model Zoo",
  "version": "0.1.0",
- "models": [
-  {
-   "name": "Loc-CAT",
-   "tags": [
-    "Tensorflow",
-    "Classification"
-   ],
-   "author": "Sullivan et al.",
-   "citeAs": "Sullivan et al. Deep learning is combined with massive-scale citizen science to improve large-scale image classification. Nat. Biotechnol. 36, 820–828 (2018).",
-   "source": "https://github.com/CellProfiling/HPA-model-template",
-   "scripts": {
-    "train": "src/training_demo.py",
-    "predict": "src/prediction_demo.py"
-   },
-   "description": "Loc-CAT is a generalized tool for annotating proteins with multiple localizations from images and generalizes across a large number of cell types.",
-   "icon": "😺"
-  },
-  {
-   "name": "Loc-CAT-2",
-   "tags": [
-    "Tensorflow",
-    "Classification"
-   ],
-   "author": "Sullivan et al.",
-   "citeAs": "Sullivan et al. Deep learning is combined with massive-scale citizen science to improve large-scale image classification. Nat. Biotechnol. 36, 820–828 (2018).",
-   "source": "https://github.com/CellProfiling/HPA-model-template",
-   "scripts": {
-    "train": "src/training_demo.py",
-    "predict": "src/prediction_demo.py"
-   },
-   "description": "Loc-CAT is a generalized tool for annotating proteins with multiple localizations from images and generalizes across a large number of cell types.",
-   "icon": "😺"
-  }
- ],
- "model_count": 2
+ "models": [],
+ "model_count": 0
 }
