@@ -49,3 +49,29 @@
  ],
  "model_count": 2
 }
+{
+   "name": "HPA-model-bestfitting",
+   "tags": [
+    "Tensorflow",
+    "Classification"
+   ],
+   "author": "Kaggler-bestfitting",
+   "citeAs": "",
+   "email": "",
+   "source": "https://kth.box.com/s/d5tk5xfdkb0sbj4329qj4fen6sp5jts5",
+   "docker": "",
+   "models": [
+    "densenet121_512",
+    "densenet121_1024",
+    "resnet34",
+    "inception_v3",
+    "resnet50",
+    "Final Ensembled1",
+    "Final Ensembled2"
+   ],
+   "description": "",
+   "icon": ""
+  }
+ ],
+ "model_count": 7
+}
