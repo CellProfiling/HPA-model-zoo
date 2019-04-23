@@ -4,7 +4,7 @@ A collection of deep learning models for analyzing the Human Protein Atlas image
 # Models
 * [HPA-model-template](https://github.com/CellProfiling/HPA-model-template)
 * [HPA-model-example](https://github.com/oeway/HPA-model-example)
-* [HPA-model-bestfitting](https://kth.box.com/s/d5tk5xfdkb0sbj4329qj4fen6sp5jts5)
+* [HPA-model-bestfitting](https://github.com/CellProfiling/HPA-model-bestfitting)
 * [HPA-model-pudae](https://kth.box.com/s/vxsttxmlu1ord7kg11639sy96iqkkgxz)
 * [HPA-model-Random Walk](https://kth.box.com/s/9vi6t7w4f7vkjtt9c2h3sv21vqobpuns)
 * [HPA-model-WAIR](https://kth.box.com/s/cjk48i7slkxpzixada20aal66kyjl24e)
