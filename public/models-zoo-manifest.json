@@ -49,7 +49,7 @@
    "author": "Gordon MacMillan",
    "citeAs": "",
    "email": "",
-   "source": "https://kth.box.com/s/d5tk5xfdkb0sbj4329qj4fen6sp5jts5",
+   "source": "https://github.com/oeway/HPA-model-example",
    "docker": "",
    "models": [
     "resnet34",
