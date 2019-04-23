@@ -49,3 +49,251 @@
  ],
  "model_count": 2
 }
+{
+   "name": "HPA-model-bestfitting",
+   "tags": [
+    "Tensorflow",
+    "Classification"
+   ],
+   "author": "Kaggler-bestfitting",
+   "citeAs": "",
+   "email": "",
+   "source": "https://kth.box.com/s/d5tk5xfdkb0sbj4329qj4fen6sp5jts5",
+   "docker": "",
+   "models": [
+    "densenet121_512",
+    "densenet121_1024",
+    "resnet34",
+    "inception_v3",
+    "resnet50",
+    "Final Ensembled1",
+    "Final Ensembled2"
+   ],
+   "description": "",
+   "icon": ""
+  }
+ ],
+ "model_count": 7
+}
+{
+   "name": "HPA-model-pudae",
+   "tags": [
+    "Tensorflow",
+    "Classification"
+   ],
+   "author": "Kaggler-pudae",
+   "citeAs": "",
+   "email": "",
+   "source": "https://kth.box.com/s/vxsttxmlu1ord7kg11639sy96iqkkgxz",
+   "docker": "",
+   "models": [
+    "resnet34",
+    "inception_v3",
+    "se-resnet50",
+    "Final Ensembled1",
+    "Final Ensembled2"
+   ],
+   "description": "",
+   "icon": ""
+  }
+ ],
+ "model_count": 5
+}
+{
+   "name": "HPA-model-Random Walk",
+   "tags": [
+    "Tensorflow",
+    "Classification"
+   ],
+   "author": "Kaggle team-Random Walk",
+   "citeAs": "",
+   "email": "",
+   "source": "https://kth.box.com/s/9vi6t7w4f7vkjtt9c2h3sv21vqobpuns",
+   "docker": "",
+   "models": [
+    "Resnet18 with Attention-Gated1",
+    "Resnet18 with Attention-Gated2",
+    "Resnet18 with Attention-Gated3",
+    "Final Ensembled1",
+    "Final Ensembled2"
+   ],
+   "description": "",
+   "icon": ""
+  }
+ ],
+ "model_count": 5
+}
+{
+   "name": "HPA-model-WAIR",
+   "tags": [
+    "Tensorflow",
+    "Classification"
+   ],
+   "author": "Kaggle team-WAIR",
+   "citeAs": "",
+   "email": "",
+   "source": "https://kth.box.com/s/cjk48i7slkxpzixada20aal66kyjl24e",
+   "docker": "",
+   "models": [
+    "densenet121_1",
+    "densenet121_2",
+    "densenet121_3",
+    "idensenet169",
+    "ibn_densenet121",
+    "se-resnextnet50",
+    "xception",
+    "Final Ensembled1",
+    "Final Ensembled2"
+   ],
+   "description": "",
+   "icon": ""
+  }
+ ],
+ "model_count": 9
+}
+{
+   "name": "HPA-model-vpp",
+   "tags": [
+    "Tensorflow",
+    "Classification"
+   ],
+   "author": "Kaggle team-vpp",
+   "citeAs": "",
+   "email": "",
+   "source": "https://kth.box.com/s/7jxegv0kmfrixfnknwcaxqjgqhm0bpqm",
+   "docker": "",
+   "models": [
+    "inceptionv3_1",
+    "inceptionv3_2",
+    "inceptionv4_1",
+    "inceptionv4_2",
+    "xception_1",
+    "xception_2",
+    "xception_3",
+    "MLP_1",
+    "MLP_2",
+    "Final Ensembled1",
+    "Final Ensembled2"
+   ],
+   "description": "",
+   "icon": ""
+  }
+ ],
+ "model_count": 11
+}
+{
+   "name": "HPA-model-wienerschnitzelgemeinschaft",
+   "tags": [
+    "Tensorflow",
+    "Classification"
+   ],
+   "author": "Kaggle team-wienerschnitzelgemeinschaft",
+   "citeAs": "",
+   "email": "",
+   "source": "https://kth.box.com/s/e6rzs8ghru3rriah987d5hxso7xvmi0c",
+   "docker": "",
+   "models": [
+    "Russ Ensemble - 1",
+    "Dmytro & Russ Ensemble - 1",
+    "Bojan Ensemble - 1",
+    "Russ Ensemble - 2",
+    "Dmytro & Russ Ensemble - 2",
+    "Bojan Ensemble - 2",
+    "Dmytro & Russ Ensemble - 3",
+    "Shai Ensemble",
+    "Christof GAPNet",
+    "Christof ResNet34",
+    "Kevin Ensemble",
+    "Pre-final ensemble 1",
+    "Pre-final ensemble 2",
+    "Final Ensembled1",
+    "Final Ensembled2"
+   ],
+   "description": "",
+   "icon": ""
+  }
+ ],
+ "model_count": 15
+}
+{
+   "name": "HPA-model-conv is all you need",
+   "tags": [
+    "Tensorflow",
+    "Classification"
+   ],
+   "author": "Kaggle team-conv is all you need",
+   "citeAs": "",
+   "email": "",
+   "source": "https://kth.box.com/s/jhwpbvbn5zzanhk0q3pqym3vcoeqci63",
+   "docker": "",
+   "models": [
+    "SE-ResNext50",
+    "InceptionV3",
+    "CWXception",
+    "Final Ensembled1"
+   ],
+   "description": "",
+   "icon": ""
+  }
+ ],
+ "model_count": 4
+}
+{
+   "name": "HPA-model-NTU_MiRA",
+   "tags": [
+    "Tensorflow",
+    "Classification"
+   ],
+   "author": "Kaggle team-NTU_MiRA",
+   "citeAs": "",
+   "email": "",
+   "source": "https://kth.box.com/s/gpqolo40na8k78aggmu4rxh5eh60g2pj",
+   "docker": "",
+   "models": [
+    "resnet34_512",
+    "resnet34_1024",
+    "resnet34_1024_distillation1",
+    "Final Ensembled1",
+    "Final Ensembled2"
+   ],
+   "description": "",
+   "icon": ""
+  }
+ ],
+ "model_count": 5
+}
+{
+   "name": "HPA-model-One More Layer",
+   "tags": [
+    "Tensorflow",
+    "Classification"
+   ],
+   "author": "Kaggle team-One More Layer",
+   "citeAs": "",
+   "email": "",
+   "source": "https://kth.box.com/s/xc2mdvyor38a6oym6n77vzth9g5ej7as",
+   "docker": "",
+   "models": [
+    "pd_seresnext_v2",
+    "pd_seresnext_v3",
+    "pd_inceptionv4_v1",
+    "pd_seresnext_v5",
+    "db_seresnext_v3_LSEP4",
+    "pd_seresnext_v6",
+    "pd_inceptionv4_v2",
+    "pd_seresnext_v7",
+    "pd_xception_v2",
+    "pd_seresnext_v10",
+    "pd_bninception_v3",
+    "pd_bninception_v4",
+    "pd_seresnext_v14",
+    "pd_seresnext_ovr_v3",
+    "Final Ensembled1",
+    "Final Ensembled2"
+   ],
+   "description": "",
+   "icon": ""
+  }
+ ],
+ "model_count": 16
+}
