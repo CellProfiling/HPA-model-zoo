@@ -59,7 +59,27 @@
    ],
    "description": "",
    "icon": ""
+  },
+  {
+   "name": "HPA-model-bestfitting",
+   "tags": [
+    "Tensorflow",
+    "Classification"
+   ],
+   "author": "Gordon MacMillan",
+   "citeAs": "",
+   "email": "",
+   "source": "https://kth.box.com/s/d5tk5xfdkb0sbj4329qj4fen6sp5jts5",
+   "docker": "",
+   "models": [
+    "resnet34",
+    "resnet50",
+    "resnet101",
+    "resnet152"
+   ],
+   "description": "",
+   "icon": ""
   }
  ],
- "model_count": 2
+ "model_count": 3
 }
