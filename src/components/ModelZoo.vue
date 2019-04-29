@@ -9,7 +9,6 @@
       <md-ripple>
         <md-card-header>
           <div class="md-title">{{ m.name }}</div>
-          <!-- <div class="md-subhead">{{ m.name }}</div> -->
           <md-chip
             v-for="tag in m.tags"
             :key="tag"
@@ -30,14 +29,6 @@
         </md-card-actions>
       </md-ripple>
     </md-card>
-    <!-- <md-dialog :md-active.sync="showDetailsDialog" :md-click-outside-to-close="false" :md-close-on-esc="false">
-      <md-dialog-content>
-
-      </md-dialog-content>
-      <md-dialog-actions>
-        <md-button class="md-primary" @click="showDetailsDialog=false">Close</md-button>
-      </md-dialog-actions>
-    </md-dialog> -->
   </div>
 </template>
 
