@@ -1,18 +1,22 @@
 <template>
   <div class="md-layout md-gutter md-alignment-center">
-    <div style="padding-left: 10px; padding-right: 5px;" v-if="docs && docs.trim() !='' " v-html="marked(docs, { sanitize: true })"></div>
-      <h3 v-else> Oops, this model has no documentation!</h3>
+    <div
+      style="padding-left: 10px; padding-right: 5px;"
+      v-if="docs && docs.trim() != ''"
+      v-html="marked(docs, { sanitize: true })"
+    ></div>
+    <h3 v-else>Oops, this model has no documentation!</h3>
   </div>
 </template>
 
 <script>
-import axios from 'axios';
+import axios from "axios";
 
-import marked from 'marked';
+import marked from "marked";
 
-function getInfoUrl(url){
-  var repo = url.replace('https://github.com/', '')
-  return 'https://raw.githubusercontent.com/' + repo + '/master/README.md';
+function getInfoUrl(url) {
+  var repo = url.replace("https://github.com/", "");
+  return "https://raw.githubusercontent.com/" + repo + "/master/README.md";
 }
 
 export default {
@@ -25,35 +29,33 @@ export default {
   },
   data() {
     return {
-      docs: '',
+      docs: "",
       modelsById: null,
       modelInfo: null
     };
   },
   mounted() {
-    this.store = this.$root.$data.store
-    if(this.store.modelsById){
-      this.modelsById = this.store.modelsById
-      this.loadContent(this.modelsById, this.$route.params.id)
-    }
-    else{
-      this.store.getModels().then(()=>{
-        this.modelsById = this.store.modelsById
+    this.store = this.$root.$data.store;
+    if (this.store.modelsById) {
+      this.modelsById = this.store.modelsById;
+      this.loadContent(this.modelsById, this.$route.params.id);
+    } else {
+      this.store.getModels().then(() => {
+        this.modelsById = this.store.modelsById;
 
-        this.loadContent(this.modelsById, this.$route.params.id)
-      })
+        this.loadContent(this.modelsById, this.$route.params.id);
+      });
     }
   },
-  created(){
-    this.marked = marked
-
+  created() {
+    this.marked = marked;
   },
-  methods:{
-    loadContent(modelsById, id){
-      this.modelInfo = modelsById[id]
+  methods: {
+    loadContent(modelsById, id) {
+      this.modelInfo = modelsById[id];
       axios.get(getInfoUrl(this.modelInfo.source)).then(response => {
         if (response && response.data) {
-          this.docs = response.data
+          this.docs = response.data;
         }
       });
     }
