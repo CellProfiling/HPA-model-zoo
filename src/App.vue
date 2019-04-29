@@ -3,8 +3,12 @@
     <md-app-toolbar class="md-primary app-toolbar">
       <div class="md-toolbar-row">
         <div class="md-toolbar-section-start">
-          <img class="site-image" src="icons/hpa-icon.png" alt="HPA Model Zoo">
-          <br>
+          <img
+            class="site-image"
+            src="icons/hpa-icon.png"
+            alt="HPA Model Zoo"
+          />
+          <br />
           <span class="site-title">Human Protein Atlas Model Zoo</span>
         </div>
       </div>
@@ -17,18 +21,16 @@
 </template>
 
 <script>
-
 export default {
   name: "app"
 };
 </script>
 
 <style>
-
 :root {
-    --md-theme-default-primary: #6c6d6f!important;
-    --md-theme-default-accent: #ff5252;
-    --md-theme-default-theme: light;
+  --md-theme-default-primary: #6c6d6f !important;
+  --md-theme-default-accent: #ff5252;
+  --md-theme-default-theme: light;
 }
 
 #app {
@@ -39,15 +41,15 @@ export default {
   color: #2c3e50;
   height: 100vh;
 }
-.site-image{
+.site-image {
   padding: 10px;
   width: 60px;
 }
-.site-title{
- font-size: 1.5em;
+.site-title {
+  font-size: 1.5em;
 }
-.md-app-toolbar{
-  z-index: 99!important;
+.md-app-toolbar {
+  z-index: 99 !important;
 }
 .md-toolbar {
   padding: 0px !important;

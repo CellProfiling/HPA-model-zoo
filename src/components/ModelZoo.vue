@@ -25,7 +25,9 @@
 
         <md-card-actions>
           <md-button @click="showDetails(m.name)">Details</md-button>
-          <md-button v-if="m.source" target="_blank" :href="m.source">Get Model</md-button>
+          <md-button v-if="m.source" target="_blank" :href="m.source"
+            >Get Model</md-button
+          >
         </md-card-actions>
       </md-ripple>
     </md-card>
@@ -41,7 +43,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+import axios from "axios";
 
 const empty_model = {
   name: "No Model Available",
@@ -49,7 +51,7 @@ const empty_model = {
   authors: [],
   citeAs: "",
   source: "",
-  description:"",
+  description: "",
   icon: ""
 };
 
@@ -61,18 +63,17 @@ export default {
       showDetailsDialog: false
     };
   },
-  created(){
-    this.store = this.$root.$data.store
-    this.store.getModels().then((models)=>{
-      this.models = models
-    })
+  created() {
+    this.store = this.$root.$data.store;
+    this.store.getModels().then(models => {
+      this.models = models;
+    });
   },
-  mounted() {
-  },
-  methods:{
-    showDetails(id){
-      let routeData = this.$router.resolve({path: '/model/'+id});
-      window.open(routeData.href, '_blank');
+  mounted() {},
+  methods: {
+    showDetails(id) {
+      let routeData = this.$router.resolve({ path: "/model/" + id });
+      window.open(routeData.href, "_blank");
     }
   }
 };
