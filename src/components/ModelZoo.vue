@@ -14,7 +14,6 @@
             v-for="tag in m.tags"
             :key="tag"
             class="md-primary"
-            md-clickable
             >{{ tag }}</md-chip
           >
         </md-card-header>
