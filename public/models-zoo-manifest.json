@@ -1,85 +1,85 @@
 {
- "name": "HPA Model Zoo",
- "version": "0.1.0",
- "models": [
-  {
-   "repo": "https://github.com/CellProfiling/HPA-model-template",
-   "license": "MIT",
-   "models": [
+  "name": "HPA Model Zoo",
+  "version": "0.1.0",
+  "models": [
     {
-     "name": "Loc-CAT-1",
-     "tags": [
-      "Tensorflow",
-      "Classification"
-     ],
-     "author": "Sullivan et al.",
-     "citeAs": "Sullivan et al. Deep learning is combined with massive-scale citizen science to improve large-scale image classification. Nat. Biotechnol. 36, 820–828 (2018).",
-     "email": "",
-     "requirements": "docker: tensorflow/tensorflow",
-     "entrypoints": {
-      "train": "python src/training_demo.py",
-      "predict": "python src/prediction_demo.py"
-     },
-     "description": "Loc-CAT is a generalized tool for annotating proteins with multiple localizations from images and generalizes across a large number of cell types.",
-     "icon": "😺"
+      "repo": "https://github.com/CellProfiling/HPA-model-template",
+      "license": "MIT",
+      "models": [
+        {
+          "name": "Loc-CAT-1",
+          "tags": [
+            "Tensorflow",
+            "Classification"
+          ],
+          "author": "Sullivan et al.",
+          "citeAs": "Sullivan et al. Deep learning is combined with massive-scale citizen science to improve large-scale image classification. Nat. Biotechnol. 36, 820–828 (2018).",
+          "email": "",
+          "requirements": "docker: tensorflow/tensorflow",
+          "entrypoints": {
+            "train": "python src/training_demo.py",
+            "predict": "python src/prediction_demo.py"
+          },
+          "description": "Loc-CAT is a generalized tool for annotating proteins with multiple localizations from images and generalizes across a large number of cell types.",
+          "icon": "😺"
+        },
+        {
+          "name": "Loc-CAT-2",
+          "tags": [
+            "PyTorch"
+          ],
+          "requirements": [
+            "pip: pytorch==1.0"
+          ],
+          "entrypoints": {
+            "train": "python src/training_demo_2.py",
+            "predict": "python src/prediction_demo_2.py"
+          },
+          "description": "Loc-CAT-2 is a generalized tool for annotating proteins with multiple localizations from images and generalizes across a large number of cell types.",
+          "icon": ""
+        }
+      ]
     },
     {
-     "name": "Loc-CAT-2",
-     "tags": [
-      "PyTorch"
-     ],
-     "requirements": [
-      "pip: pytorch==1.0"
-     ],
-     "entrypoints": {
-      "train": "python src/training_demo_2.py",
-      "predict": "python src/prediction_demo_2.py"
-     },
-     "description": "Loc-CAT-2 is a generalized tool for annotating proteins with multiple localizations from images and generalizes across a large number of cell types.",
-     "icon": ""
+      "name": "HPA-model-example",
+      "tags": [
+        "Tensorflow",
+        "Classification"
+      ],
+      "author": "Gordon MacMillan",
+      "citeAs": "",
+      "email": "",
+      "source": "https://github.com/oeway/HPA-model-example",
+      "docker": "",
+      "models": [
+        "resnet34",
+        "resnet50",
+        "resnet101",
+        "resnet152"
+      ],
+      "description": "",
+      "icon": ""
+    },
+    {
+      "name": "HPA-model-bestfitting",
+      "tags": [
+        "Tensorflow",
+        "Classification"
+      ],
+      "author": "Gordon MacMillan",
+      "citeAs": "",
+      "email": "",
+      "source": "https://kth.box.com/s/d5tk5xfdkb0sbj4329qj4fen6sp5jts5",
+      "docker": "",
+      "models": [
+        "resnet34",
+        "resnet50",
+        "resnet101",
+        "resnet152"
+      ],
+      "description": "",
+      "icon": ""
     }
-   ]
-  },
-  {
-   "name": "HPA-model-example",
-   "tags": [
-    "Tensorflow",
-    "Classification"
-   ],
-   "author": "Gordon MacMillan",
-   "citeAs": "",
-   "email": "",
-   "source": "https://github.com/oeway/HPA-model-example",
-   "docker": "",
-   "models": [
-    "resnet34",
-    "resnet50",
-    "resnet101",
-    "resnet152"
-   ],
-   "description": "",
-   "icon": ""
-  },
-  {
-   "name": "HPA-model-bestfitting",
-   "tags": [
-    "Tensorflow",
-    "Classification"
-   ],
-   "author": "Gordon MacMillan",
-   "citeAs": "",
-   "email": "",
-   "source": "https://kth.box.com/s/d5tk5xfdkb0sbj4329qj4fen6sp5jts5",
-   "docker": "",
-   "models": [
-    "resnet34",
-    "resnet50",
-    "resnet101",
-    "resnet152"
-   ],
-   "description": "",
-   "icon": ""
-  }
- ],
- "model_count": 3
+  ],
+  "model_count": 3
 }
