@@ -5,8 +5,8 @@
     {
       "name": "HPA-model-example",
       "tags": [
-        "Tensorflow",
-        "Classification"
+        "tensorflow",
+        "classification"
       ],
       "author": "Gordon MacMillan",
       "citeAs": "",
@@ -19,16 +19,16 @@
         "resnet101",
         "resnet152"
       ],
-      "description": "",
-      "icon": ""
+      "description": "Using Kubeflow and Kubernetes to distribute training of a classifier for sub-cellular protein patterns in human cells.",
+      "icon": "",
+      "readme": "https://raw.githubusercontent.com/oeway/HPA-model-example/master/README.md"
     },
     {
       "name": "HPA-model-bestfitting",
       "tags": [
-        "Tensorflow",
-        "Classification"
+        "classification"
       ],
-      "author": "",
+      "author": "Shubin Dai",
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/d5tk5xfdkb0sbj4329qj4fen6sp5jts5",
@@ -39,14 +39,17 @@
         "resnet101",
         "resnet152"
       ],
-      "description": "",
-      "icon": ""
+      "description": "A CNN multi-label classification model to predict labels of each sample.",
+      "icon": "",
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/a8935e90614eff087e8fe034329f82df/raw/d6ea8412979a2e58a23efa1944af0aa5a200106d/README.md"
     },
     {
       "name": "HPA-model-WAIR",
       "tags": [
-        "Tensorflow",
-        "Classification"
+        "pytorch",
+        "opencv",
+        "scikit-learn",
+        "classification"
       ],
       "author": "",
       "citeAs": "",
@@ -59,14 +62,14 @@
         "resnet101",
         "resnet152"
       ],
-      "description": "",
-      "icon": ""
+      "description": "An ensemble of CNN models, using multiple different architectures.",
+      "icon": "",
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/9cf9f4509db7a6ddee73a3c15f117756/raw/554a21ba82835b8d9af6bf1a610399c5234d2a9e/README.md"
     },
     {
       "name": "HPA-model-pudae",
       "tags": [
-        "Tensorflow",
-        "Classification"
+        "classification"
       ],
       "author": "",
       "citeAs": "",
@@ -80,13 +83,14 @@
         "resnet152"
       ],
       "description": "",
-      "icon": ""
+      "icon": "",
+      "readme": ""
     },
     {
       "name": "HPA-model-wienerschnitzelgemeinschaft",
       "tags": [
-        "Tensorflow",
-        "Classification"
+        "pytorch",
+        "classification"
       ],
       "author": "",
       "citeAs": "",
@@ -100,13 +104,13 @@
         "resnet152"
       ],
       "description": "",
-      "icon": ""
+      "icon": "",
+      "readme": ""
     },
     {
       "name": "HPA-model-vpp",
       "tags": [
-        "Tensorflow",
-        "Classification"
+        "classification"
       ],
       "author": "",
       "citeAs": "",
@@ -120,13 +124,13 @@
         "resnet152"
       ],
       "description": "",
-      "icon": ""
+      "icon": "",
+      "readme": ""
     },
     {
       "name": "HPA-model-One More Layer",
       "tags": [
-        "Tensorflow",
-        "Classification"
+        "classification"
       ],
       "author": "",
       "citeAs": "",
@@ -140,13 +144,13 @@
         "resnet152"
       ],
       "description": "",
-      "icon": ""
+      "icon": "",
+      "readme": ""
     },
     {
       "name": "HPA-model-conv is all you need",
       "tags": [
-        "Tensorflow",
-        "Classification"
+        "classification"
       ],
       "author": "",
       "citeAs": "",
@@ -160,13 +164,13 @@
         "resnet152"
       ],
       "description": "",
-      "icon": ""
+      "icon": "",
+      "readme": ""
     },
     {
       "name": "HPA-model-NTU_MiRA",
       "tags": [
-        "Tensorflow",
-        "Classification"
+        "classification"
       ],
       "author": "",
       "citeAs": "",
@@ -180,13 +184,13 @@
         "resnet152"
       ],
       "description": "",
-      "icon": ""
+      "icon": "",
+      "readme": ""
     },
     {
       "name": "HPA-model-Random Walk",
       "tags": [
-        "Tensorflow",
-        "Classification"
+        "classification"
       ],
       "author": "",
       "citeAs": "",
@@ -200,7 +204,8 @@
         "resnet152"
       ],
       "description": "",
-      "icon": ""
+      "icon": "",
+      "readme": ""
     }
   ],
   "model_count": 3
