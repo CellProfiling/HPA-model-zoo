@@ -84,7 +84,7 @@
       ],
       "description": "",
       "icon": "",
-      "readme": ""
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/20a4a0e9c2f142d745442e82cb191818/raw/29ffecf2f2422ab8c26be54340b04f30572c6308/README.md"
     },
     {
       "name": "HPA-model-wienerschnitzelgemeinschaft",
@@ -105,7 +105,7 @@
       ],
       "description": "",
       "icon": "",
-      "readme": ""
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/3920f683106d753527a470f8702ea884/raw/f974fa59050f841242cfbf24d762696e3f93a71c/README.md"
     },
     {
       "name": "HPA-model-vpp",
@@ -125,7 +125,7 @@
       ],
       "description": "",
       "icon": "",
-      "readme": ""
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/e076ae80da5bf4a8cf714d4d514c4bbd/raw/100cf2d441ab71a4b0be1f2d3ffbe57676da2b60/README.md"
     },
     {
       "name": "HPA-model-One More Layer",
@@ -145,7 +145,7 @@
       ],
       "description": "",
       "icon": "",
-      "readme": ""
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/bbcc29a3fa62617528e248673bd814b5/raw/fb4e9d31c50deb6f5a23c4a4242b2a650cdc42e6/README.md"
     },
     {
       "name": "HPA-model-conv is all you need",
@@ -165,7 +165,7 @@
       ],
       "description": "",
       "icon": "",
-      "readme": ""
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/b7d9ea1eda6cea818c1feaec9887279e/raw/4d443bd5744ba2aa3c2a921fe2eb9ea55ff8b87f/README.md"
     },
     {
       "name": "HPA-model-NTU_MiRA",
@@ -185,7 +185,7 @@
       ],
       "description": "",
       "icon": "",
-      "readme": ""
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/fabd73673ff187c0fdd976cbda73e89b/raw/99270f909f834943b398dd295e6efa7acaf75155/README.md"
     },
     {
       "name": "HPA-model-Random Walk",
@@ -205,7 +205,7 @@
       ],
       "description": "",
       "icon": "",
-      "readme": ""
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/1c79904801ba1097401f9afc20638284/raw/565a8037a5c5de9daa4b33c39855a847b32c0055/README.md"
     }
   ],
   "model_count": 3
