@@ -53,7 +53,7 @@ export default {
   methods: {
     loadContent(modelsById, id) {
       this.modelInfo = modelsById[id];
-      axios.get(getInfoUrl(this.modelInfo.source)).then(response => {
+      axios.get(this.modelInfo.readme).then(response => {
         if (response && response.data) {
           this.docs = response.data;
         }
