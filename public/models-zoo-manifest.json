@@ -28,10 +28,170 @@
         "Tensorflow",
         "Classification"
       ],
-      "author": "Gordon MacMillan",
+      "author": "",
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/d5tk5xfdkb0sbj4329qj4fen6sp5jts5",
+      "docker": "",
+      "models": [
+        "resnet34",
+        "resnet50",
+        "resnet101",
+        "resnet152"
+      ],
+      "description": "",
+      "icon": ""
+    },
+    {
+      "name": "HPA-model-WAIR",
+      "tags": [
+        "Tensorflow",
+        "Classification"
+      ],
+      "author": "",
+      "citeAs": "",
+      "email": "",
+      "source": "https://kth.box.com/s/cjk48i7slkxpzixada20aal66kyjl24e",
+      "docker": "",
+      "models": [
+        "resnet34",
+        "resnet50",
+        "resnet101",
+        "resnet152"
+      ],
+      "description": "",
+      "icon": ""
+    },
+    {
+      "name": "HPA-model-pudae",
+      "tags": [
+        "Tensorflow",
+        "Classification"
+      ],
+      "author": "",
+      "citeAs": "",
+      "email": "",
+      "source": "https://kth.box.com/s/vxsttxmlu1ord7kg11639sy96iqkkgxz",
+      "docker": "",
+      "models": [
+        "resnet34",
+        "resnet50",
+        "resnet101",
+        "resnet152"
+      ],
+      "description": "",
+      "icon": ""
+    },
+    {
+      "name": "HPA-model-wienerschnitzelgemeinschaft",
+      "tags": [
+        "Tensorflow",
+        "Classification"
+      ],
+      "author": "",
+      "citeAs": "",
+      "email": "",
+      "source": "https://kth.box.com/s/e6rzs8ghru3rriah987d5hxso7xvmi0c",
+      "docker": "",
+      "models": [
+        "resnet34",
+        "resnet50",
+        "resnet101",
+        "resnet152"
+      ],
+      "description": "",
+      "icon": ""
+    },
+    {
+      "name": "HPA-model-vpp",
+      "tags": [
+        "Tensorflow",
+        "Classification"
+      ],
+      "author": "",
+      "citeAs": "",
+      "email": "",
+      "source": "https://kth.box.com/s/7jxegv0kmfrixfnknwcaxqjgqhm0bpqm",
+      "docker": "",
+      "models": [
+        "resnet34",
+        "resnet50",
+        "resnet101",
+        "resnet152"
+      ],
+      "description": "",
+      "icon": ""
+    },
+    {
+      "name": "HPA-model-One More Layer",
+      "tags": [
+        "Tensorflow",
+        "Classification"
+      ],
+      "author": "",
+      "citeAs": "",
+      "email": "",
+      "source": "https://kth.box.com/s/xc2mdvyor38a6oym6n77vzth9g5ej7as",
+      "docker": "",
+      "models": [
+        "resnet34",
+        "resnet50",
+        "resnet101",
+        "resnet152"
+      ],
+      "description": "",
+      "icon": ""
+    },
+    {
+      "name": "HPA-model-conv is all you need",
+      "tags": [
+        "Tensorflow",
+        "Classification"
+      ],
+      "author": "",
+      "citeAs": "",
+      "email": "",
+      "source": "https://kth.box.com/s/jhwpbvbn5zzanhk0q3pqym3vcoeqci63",
+      "docker": "",
+      "models": [
+        "resnet34",
+        "resnet50",
+        "resnet101",
+        "resnet152"
+      ],
+      "description": "",
+      "icon": ""
+    },
+    {
+      "name": "HPA-model-NTU_MiRA",
+      "tags": [
+        "Tensorflow",
+        "Classification"
+      ],
+      "author": "",
+      "citeAs": "",
+      "email": "",
+      "source": "https://kth.box.com/s/gpqolo40na8k78aggmu4rxh5eh60g2pj",
+      "docker": "",
+      "models": [
+        "resnet34",
+        "resnet50",
+        "resnet101",
+        "resnet152"
+      ],
+      "description": "",
+      "icon": ""
+    },
+    {
+      "name": "HPA-model-Random Walk",
+      "tags": [
+        "Tensorflow",
+        "Classification"
+      ],
+      "author": "",
+      "citeAs": "",
+      "email": "",
+      "source": "https://kth.box.com/s/9vi6t7w4f7vkjtt9c2h3sv21vqobpuns",
       "docker": "",
       "models": [
         "resnet34",
