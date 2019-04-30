@@ -5,10 +5,9 @@
     {
       "name": "HPA-model-example",
       "tags": [
-        "tensorflow",
         "classification"
       ],
-      "framework": "",
+      "framework": "tensorflow",
       "author": [
         "Gordon MacMillan"
       ],
@@ -32,11 +31,10 @@
         "classification",
         "densenet-121",
         "inception-v3",
-        "pytorch",
         "resnet-34",
         "resnet-50"
       ],
-      "framework": "",
+      "framework": "pytorch",
       "author": [
         "Shubin Dai"
       ],
@@ -56,13 +54,12 @@
         "densenet-121",
         "densenet-169",
         "ibn-densenet-121",
-        "pytorch",
         "opencv",
         "scikit-learn",
         "se-resnext-50",
         "xception"
       ],
-      "framework": "",
+      "framework": "pytorch",
       "author": [],
       "citeAs": "",
       "email": "",
@@ -81,7 +78,7 @@
         "resnet-34",
         "se-resnext-50"
       ],
-      "framework": "",
+      "framework": "pytorch",
       "author": [],
       "citeAs": "",
       "email": "",
@@ -103,14 +100,13 @@
         "inception-resnet-v2",
         "inception-v3",
         "preresnet-50",
-        "pytorch",
         "resnet-18",
         "resnet-34",
         "resnet-50",
         "resnet-101",
         "se-resnext-50"
       ],
-      "framework": "",
+      "framework": "pytorch",
       "author": [],
       "citeAs": "",
       "email": "",
@@ -130,7 +126,7 @@
         "multilayer-perceptron",
         "xception"
       ],
-      "framework": "",
+      "framework": "pytorch",
       "author": [],
       "citeAs": "",
       "email": "",
@@ -151,7 +147,7 @@
         "se-resnext-50",
         "xception"
       ],
-      "framework": "",
+      "framework": "pytorch",
       "author": [],
       "citeAs": "",
       "email": "",
@@ -170,7 +166,7 @@
         "se-resnext-50",
         "xception"
       ],
-      "framework": "",
+      "framework": "pytorch",
       "author": [],
       "citeAs": "",
       "email": "",
@@ -187,7 +183,7 @@
         "classification",
         "resnet-34"
       ],
-      "framework": "",
+      "framework": "tensorflow",
       "author": [],
       "citeAs": "",
       "email": "",
@@ -205,7 +201,7 @@
         "classification",
         "resnet-18"
       ],
-      "framework": "",
+      "framework": "pytorch",
       "author": [],
       "citeAs": "",
       "email": "",
