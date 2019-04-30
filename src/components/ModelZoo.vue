@@ -9,16 +9,18 @@
       <md-ripple>
         <md-card-header>
           <div class="md-title">{{ m.name }}</div>
-          <md-chip
-            v-for="tag in m.tags"
-            :key="tag"
-            class="md-primary"
-            >{{ tag }}</md-chip
-          >
         </md-card-header>
 
         <md-card-content>
-          {{ m.description }}
+          <div>
+            {{ m.description }}
+          </div>
+          <div>
+            <md-chip class="md-accent">{{ m.framework }}</md-chip>
+          </div>
+          <md-chip v-for="tag in m.tags" :key="tag" class="md-primary">{{
+            tag
+          }}</md-chip>
         </md-card-content>
 
         <md-card-actions>
