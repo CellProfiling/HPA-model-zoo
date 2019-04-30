@@ -1,11 +1,30 @@
 <template>
   <div class="md-layout md-gutter md-alignment-center">
-    <div
-      style="padding-left: 10px; padding-right: 5px;"
-      v-if="docs && docs.trim() != ''"
-      v-html="marked(docs, { sanitize: true })"
-    ></div>
-    <h3 v-else>Oops, this model has no documentation!</h3>
+    <div>
+      <div>
+        <md-card-header>
+          <div v-if="modelInfo" class="md-title">{{ modelInfo.name }}</div>
+        </md-card-header>
+      </div>
+      <div>
+        <md-chip v-if="modelInfo && modelInfo.framework" class="md-accent">{{
+          modelInfo.framework
+        }}</md-chip>
+        <md-chip
+          v-if="authors"
+          v-for="author in authors"
+          :key="author"
+          class="md-primary"
+          >{{ author }}</md-chip
+        >
+      </div>
+      <div
+        style="padding-left: 10px; padding-right: 5px;"
+        v-if="docs && docs.trim() != ''"
+        v-html="marked(docs, { sanitize: true })"
+      ></div>
+      <h3 v-else>Oops, this model has no documentation!</h3>
+    </div>
   </div>
 </template>
 
@@ -25,6 +44,12 @@ export default {
     name: {
       type: String,
       default: null
+    }
+  },
+  computed: {
+    // a computed getter
+    authors: function() {
+      return this.modelInfo ? this.modelInfo.author : [];
     }
   },
   data() {
