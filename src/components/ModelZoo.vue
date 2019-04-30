@@ -38,6 +38,7 @@ import axios from "axios";
 const empty_model = {
   name: "No Model Available",
   tags: [],
+  framework: "",
   author: [],
   citeAs: "",
   email: "",

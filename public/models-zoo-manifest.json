@@ -8,7 +8,10 @@
         "tensorflow",
         "classification"
       ],
-      "author": "Gordon MacMillan",
+      "framework": "",
+      "author": [
+        "Gordon MacMillan"
+      ],
       "citeAs": "",
       "email": "",
       "source": "https://github.com/oeway/HPA-model-example",
@@ -29,10 +32,14 @@
         "classification",
         "densenet-121",
         "inception-v3",
+        "pytorch",
         "resnet-34",
         "resnet-50"
       ],
-      "author": "Shubin Dai",
+      "framework": "",
+      "author": [
+        "Shubin Dai"
+      ],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/d5tk5xfdkb0sbj4329qj4fen6sp5jts5",
@@ -55,7 +62,8 @@
         "se-resnext-50",
         "xception"
       ],
-      "author": "",
+      "framework": "",
+      "author": [],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/cjk48i7slkxpzixada20aal66kyjl24e",
@@ -73,7 +81,8 @@
         "resnet-34",
         "se-resnext-50"
       ],
-      "author": "",
+      "framework": "",
+      "author": [],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/vxsttxmlu1ord7kg11639sy96iqkkgxz",
@@ -101,7 +110,8 @@
         "resnet-101",
         "se-resnext-50"
       ],
-      "author": "",
+      "framework": "",
+      "author": [],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/e6rzs8ghru3rriah987d5hxso7xvmi0c",
@@ -120,7 +130,8 @@
         "multilayer-perceptron",
         "xception"
       ],
-      "author": "",
+      "framework": "",
+      "author": [],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/7jxegv0kmfrixfnknwcaxqjgqhm0bpqm",
@@ -140,7 +151,8 @@
         "se-resnext-50",
         "xception"
       ],
-      "author": "",
+      "framework": "",
+      "author": [],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/xc2mdvyor38a6oym6n77vzth9g5ej7as",
@@ -158,7 +170,8 @@
         "se-resnext-50",
         "xception"
       ],
-      "author": "",
+      "framework": "",
+      "author": [],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/jhwpbvbn5zzanhk0q3pqym3vcoeqci63",
@@ -174,7 +187,8 @@
         "classification",
         "resnet-34"
       ],
-      "author": "",
+      "framework": "",
+      "author": [],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/gpqolo40na8k78aggmu4rxh5eh60g2pj",
@@ -191,7 +205,8 @@
         "classification",
         "resnet-18"
       ],
-      "author": "",
+      "framework": "",
+      "author": [],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/9vi6t7w4f7vkjtt9c2h3sv21vqobpuns",
