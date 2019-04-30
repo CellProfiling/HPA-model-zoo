@@ -14,10 +14,10 @@
       "source": "https://github.com/oeway/HPA-model-example",
       "docker": "",
       "models": [
-        "resnet34",
-        "resnet50",
-        "resnet101",
-        "resnet152"
+        "resnet-34",
+        "resnet-50",
+        "resnet-101",
+        "resnet-152"
       ],
       "description": "Using Kubeflow and Kubernetes to distribute training of a classifier for sub-cellular protein patterns in human cells.",
       "icon": "",
@@ -26,42 +26,41 @@
     {
       "name": "HPA-model-bestfitting",
       "tags": [
-        "classification"
+        "classification",
+        "densenet-121",
+        "inception-v3",
+        "resnet-34",
+        "resnet-50"
       ],
       "author": "Shubin Dai",
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/d5tk5xfdkb0sbj4329qj4fen6sp5jts5",
       "docker": "",
-      "models": [
-        "resnet34",
-        "resnet50",
-        "resnet101",
-        "resnet152"
-      ],
+      "models": [],
       "description": "A CNN multi-label classification model to predict labels of each sample.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/a8935e90614eff087e8fe034329f82df/raw/d6ea8412979a2e58a23efa1944af0aa5a200106d/README.md"
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/a8935e90614eff087e8fe034329f82df/raw/fc72b6bfa76f8fde70774ff11c65715954074fe9/README.md"
     },
     {
       "name": "HPA-model-WAIR",
       "tags": [
+        "classification",
+        "densenet-121",
+        "densenet-169",
+        "ibn-densenet-121",
         "pytorch",
         "opencv",
         "scikit-learn",
-        "classification"
+        "se-resnext-50",
+        "xception"
       ],
       "author": "",
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/cjk48i7slkxpzixada20aal66kyjl24e",
       "docker": "",
-      "models": [
-        "resnet34",
-        "resnet50",
-        "resnet101",
-        "resnet152"
-      ],
+      "models": [],
       "description": "An ensemble of CNN models, using multiple different architectures.",
       "icon": "",
       "readme": "https://gist.githubusercontent.com/MartinHjelmare/9cf9f4509db7a6ddee73a3c15f117756/raw/554a21ba82835b8d9af6bf1a610399c5234d2a9e/README.md"
@@ -69,19 +68,17 @@
     {
       "name": "HPA-model-pudae",
       "tags": [
-        "classification"
+        "classification",
+        "inception-v3",
+        "resnet-34",
+        "se-resnext-50"
       ],
       "author": "",
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/vxsttxmlu1ord7kg11639sy96iqkkgxz",
       "docker": "",
-      "models": [
-        "resnet34",
-        "resnet50",
-        "resnet101",
-        "resnet152"
-      ],
+      "models": [],
       "description": "",
       "icon": "",
       "readme": "https://gist.githubusercontent.com/MartinHjelmare/20a4a0e9c2f142d745442e82cb191818/raw/29ffecf2f2422ab8c26be54340b04f30572c6308/README.md"
@@ -89,20 +86,27 @@
     {
       "name": "HPA-model-wienerschnitzelgemeinschaft",
       "tags": [
+        "airnet-50",
+        "airnext-50",
+        "cbam",
+        "classification",
+        "hill-climbing",
+        "inception-resnet-v2",
+        "inception-v3",
+        "preresnet-50",
         "pytorch",
-        "classification"
+        "resnet-18",
+        "resnet-34",
+        "resnet-50",
+        "resnet-101",
+        "se-resnext-50"
       ],
       "author": "",
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/e6rzs8ghru3rriah987d5hxso7xvmi0c",
       "docker": "",
-      "models": [
-        "resnet34",
-        "resnet50",
-        "resnet101",
-        "resnet152"
-      ],
+      "models": [],
       "description": "",
       "icon": "",
       "readme": "https://gist.githubusercontent.com/MartinHjelmare/3920f683106d753527a470f8702ea884/raw/f974fa59050f841242cfbf24d762696e3f93a71c/README.md"
@@ -110,39 +114,38 @@
     {
       "name": "HPA-model-vpp",
       "tags": [
-        "classification"
+        "classification",
+        "inception-v3",
+        "inception-v4",
+        "multilayer-perceptron",
+        "xception"
       ],
       "author": "",
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/7jxegv0kmfrixfnknwcaxqjgqhm0bpqm",
       "docker": "",
-      "models": [
-        "resnet34",
-        "resnet50",
-        "resnet101",
-        "resnet152"
-      ],
+      "models": [],
       "description": "",
       "icon": "",
       "readme": "https://gist.githubusercontent.com/MartinHjelmare/e076ae80da5bf4a8cf714d4d514c4bbd/raw/100cf2d441ab71a4b0be1f2d3ffbe57676da2b60/README.md"
     },
     {
-      "name": "HPA-model-One More Layer",
+      "name": "HPA-model-One More Layer Of Stacking",
       "tags": [
-        "classification"
+        "bn-inception",
+        "classification",
+        "inception-v4",
+        "lightgbm",
+        "se-resnext-50",
+        "xception"
       ],
       "author": "",
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/xc2mdvyor38a6oym6n77vzth9g5ej7as",
       "docker": "",
-      "models": [
-        "resnet34",
-        "resnet50",
-        "resnet101",
-        "resnet152"
-      ],
+      "models": [],
       "description": "",
       "icon": "",
       "readme": "https://gist.githubusercontent.com/MartinHjelmare/bbcc29a3fa62617528e248673bd814b5/raw/fb4e9d31c50deb6f5a23c4a4242b2a650cdc42e6/README.md"
@@ -150,19 +153,17 @@
     {
       "name": "HPA-model-conv is all you need",
       "tags": [
-        "classification"
+        "classification",
+        "inception-v3",
+        "se-resnext-50",
+        "xception"
       ],
       "author": "",
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/jhwpbvbn5zzanhk0q3pqym3vcoeqci63",
       "docker": "",
-      "models": [
-        "resnet34",
-        "resnet50",
-        "resnet101",
-        "resnet152"
-      ],
+      "models": [],
       "description": "",
       "icon": "",
       "readme": "https://gist.githubusercontent.com/MartinHjelmare/b7d9ea1eda6cea818c1feaec9887279e/raw/4d443bd5744ba2aa3c2a921fe2eb9ea55ff8b87f/README.md"
@@ -170,39 +171,32 @@
     {
       "name": "HPA-model-NTU_MiRA",
       "tags": [
-        "classification"
+        "classification",
+        "resnet-34"
       ],
       "author": "",
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/gpqolo40na8k78aggmu4rxh5eh60g2pj",
       "docker": "",
-      "models": [
-        "resnet34",
-        "resnet50",
-        "resnet101",
-        "resnet152"
-      ],
-      "description": "",
+      "models": [],
+      "description": "A CNN with large input size (1024 ⨉ 1024 px) using fixed batch-normalization and data distillation.",
       "icon": "",
       "readme": "https://gist.githubusercontent.com/MartinHjelmare/fabd73673ff187c0fdd976cbda73e89b/raw/99270f909f834943b398dd295e6efa7acaf75155/README.md"
     },
     {
       "name": "HPA-model-Random Walk",
       "tags": [
-        "classification"
+        "attention-gate",
+        "classification",
+        "resnet-18"
       ],
       "author": "",
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/9vi6t7w4f7vkjtt9c2h3sv21vqobpuns",
       "docker": "",
-      "models": [
-        "resnet34",
-        "resnet50",
-        "resnet101",
-        "resnet152"
-      ],
+      "models": [],
       "description": "",
       "icon": "",
       "readme": "https://gist.githubusercontent.com/MartinHjelmare/1c79904801ba1097401f9afc20638284/raw/565a8037a5c5de9daa4b33c39855a847b32c0055/README.md"
