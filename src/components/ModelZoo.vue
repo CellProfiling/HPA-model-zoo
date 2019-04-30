@@ -12,12 +12,12 @@
         </md-card-header>
 
         <md-card-content>
-          <div>
-            {{ m.description }}
-          </div>
-          <div>
-            <md-chip class="md-accent">{{ m.framework }}</md-chip>
-          </div>
+          {{ m.description }}
+        </md-card-content>
+        <md-card-content>
+          <md-chip class="md-accent">{{ m.framework }}</md-chip>
+        </md-card-content>
+        <md-card-content>
           <md-chip v-for="tag in m.tags" :key="tag" class="md-primary">{{
             tag
           }}</md-chip>
