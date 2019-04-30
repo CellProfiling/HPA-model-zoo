@@ -45,7 +45,7 @@
       "models": [],
       "description": "A CNN multi-label classification model to predict labels of each sample.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/a8935e90614eff087e8fe034329f82df/raw/fc72b6bfa76f8fde70774ff11c65715954074fe9/README.md"
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/a8935e90614eff087e8fe034329f82df/raw/2bc11a1d7de717557b0ba148a7904ccd12242452/README.md"
     },
     {
       "name": "HPA-model-WAIR",
@@ -60,7 +60,9 @@
         "xception"
       ],
       "framework": "pytorch",
-      "author": [],
+      "author": [
+        "Jun Lan"
+      ],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/cjk48i7slkxpzixada20aal66kyjl24e",
@@ -68,7 +70,7 @@
       "models": [],
       "description": "An ensemble of CNN models, using multiple different architectures.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/9cf9f4509db7a6ddee73a3c15f117756/raw/554a21ba82835b8d9af6bf1a610399c5234d2a9e/README.md"
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/9cf9f4509db7a6ddee73a3c15f117756/raw/84d645797d389cc2dfce5ac8b3e8c58baaf80204/README.md"
     },
     {
       "name": "HPA-model-pudae",
@@ -79,7 +81,9 @@
         "se-resnext-50"
       ],
       "framework": "pytorch",
-      "author": [],
+      "author": [
+        "Park Jinmo"
+      ],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/vxsttxmlu1ord7kg11639sy96iqkkgxz",
@@ -87,7 +91,7 @@
       "models": [],
       "description": "",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/20a4a0e9c2f142d745442e82cb191818/raw/29ffecf2f2422ab8c26be54340b04f30572c6308/README.md"
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/20a4a0e9c2f142d745442e82cb191818/raw/156a4d89bbb48c089f6301ea0f3248df6b96c716/README.md"
     },
     {
       "name": "HPA-model-wienerschnitzelgemeinschaft",
@@ -107,7 +111,14 @@
         "se-resnext-50"
       ],
       "framework": "pytorch",
-      "author": [],
+      "author": [
+        "Shaikat Mahmood Galib",
+        "Christof Henkel",
+        "Kevin Hwang",
+        "Dmytro Poplavskiy",
+        "Bojan Tunguz",
+        "Russ Wolfinger"
+      ],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/e6rzs8ghru3rriah987d5hxso7xvmi0c",
@@ -115,7 +126,7 @@
       "models": [],
       "description": "",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/3920f683106d753527a470f8702ea884/raw/f974fa59050f841242cfbf24d762696e3f93a71c/README.md"
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/3920f683106d753527a470f8702ea884/raw/2aa2a955b877c4b24dd5393a5cb1d9a3cdc91d97/README.md"
     },
     {
       "name": "HPA-model-vpp",
@@ -127,7 +138,11 @@
         "xception"
       ],
       "framework": "pytorch",
-      "author": [],
+      "author": [
+        "Yinzheng Gu",
+        "Chuanpeng Li",
+        "Jinbin Xie"
+      ],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/7jxegv0kmfrixfnknwcaxqjgqhm0bpqm",
@@ -135,7 +150,7 @@
       "models": [],
       "description": "",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/e076ae80da5bf4a8cf714d4d514c4bbd/raw/100cf2d441ab71a4b0be1f2d3ffbe57676da2b60/README.md"
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/e076ae80da5bf4a8cf714d4d514c4bbd/raw/445d0610c220138b83bd4dbcd29a67d7419f048f/README.md"
     },
     {
       "name": "HPA-model-One More Layer Of Stacking",
@@ -148,7 +163,12 @@
         "xception"
       ],
       "framework": "pytorch",
-      "author": [],
+      "author": [
+        "Dmitry Buslov",
+        "Sergei Fironov",
+        "Alexander Kiselev",
+        "Dmytro Panchenko"
+      ],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/xc2mdvyor38a6oym6n77vzth9g5ej7as",
@@ -156,7 +176,7 @@
       "models": [],
       "description": "",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/bbcc29a3fa62617528e248673bd814b5/raw/fb4e9d31c50deb6f5a23c4a4242b2a650cdc42e6/README.md"
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/a7ce9ae7ce1b65f2ed99c7f3e4c2e262/raw/d830494c2d22759f081ad3b014ba68378938b7db/README.md"
     },
     {
       "name": "HPA-model-conv is all you need",
@@ -167,7 +187,12 @@
         "xception"
       ],
       "framework": "pytorch",
-      "author": [],
+      "author": [
+        "Xuan Cao",
+        "Runmin Wei",
+        "Yuanhao Wu",
+        "Xun Zhu"
+      ],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/jhwpbvbn5zzanhk0q3pqym3vcoeqci63",
@@ -175,7 +200,7 @@
       "models": [],
       "description": "",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/b7d9ea1eda6cea818c1feaec9887279e/raw/4d443bd5744ba2aa3c2a921fe2eb9ea55ff8b87f/README.md"
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/b7d9ea1eda6cea818c1feaec9887279e/raw/404c50f18cc9f44b6af5b018384c75395fb3fd8c/README.md"
     },
     {
       "name": "HPA-model-NTU_MiRA",
@@ -184,7 +209,9 @@
         "resnet-34"
       ],
       "framework": "tensorflow",
-      "author": [],
+      "author": [
+        "Kuan-Lun Tseng"
+      ],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/gpqolo40na8k78aggmu4rxh5eh60g2pj",
@@ -192,7 +219,7 @@
       "models": [],
       "description": "A CNN with large input size (1024 ⨉ 1024 px) using fixed batch-normalization and data distillation.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/fabd73673ff187c0fdd976cbda73e89b/raw/99270f909f834943b398dd295e6efa7acaf75155/README.md"
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/fabd73673ff187c0fdd976cbda73e89b/raw/03e4dd4501420441f0c4f199d2dbe1d2e7943c71/README.md"
     },
     {
       "name": "HPA-model-Random Walk",
@@ -202,7 +229,12 @@
         "resnet-18"
       ],
       "framework": "pytorch",
-      "author": [],
+      "author": [
+        "Zhifeng Gao",
+        "Cheng Ju",
+        "Xiaohan Yi",
+        "Hongdong Zheng"
+      ],
       "citeAs": "",
       "email": "",
       "source": "https://kth.box.com/s/9vi6t7w4f7vkjtt9c2h3sv21vqobpuns",
@@ -210,7 +242,7 @@
       "models": [],
       "description": "",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/1c79904801ba1097401f9afc20638284/raw/565a8037a5c5de9daa4b33c39855a847b32c0055/README.md"
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/1c79904801ba1097401f9afc20638284/raw/ff36f938bae7497f10cca0b034c76ead2ff51d9b/README.md"
     }
   ],
   "model_count": 3
