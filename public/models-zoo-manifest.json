@@ -43,7 +43,7 @@
       "source": "https://kth.box.com/s/gw43cvngx6quknq8ana9um1xx3ajhi4a",
       "docker": "",
       "models": [],
-      "description": "A CNN multi-label classification model to predict labels of each sample.",
+      "description": "A CNN model using focal loss and image augmentation, optimized with Adam optimizer.",
       "icon": "",
       "readme": "https://gist.githubusercontent.com/MartinHjelmare/a8935e90614eff087e8fe034329f82df/raw/2bc11a1d7de717557b0ba148a7904ccd12242452/README.md"
     },
@@ -68,7 +68,7 @@
       "source": "https://kth.box.com/s/y6xc7ok4dy76sbza4llh90uwunda9lj9",
       "docker": "",
       "models": [],
-      "description": "An ensemble of CNN models, using multiple different architectures.",
+      "description": "Seven CNN models, using multiple different architectures, ensembled through averaging.",
       "icon": "",
       "readme": "https://gist.githubusercontent.com/MartinHjelmare/9cf9f4509db7a6ddee73a3c15f117756/raw/84d645797d389cc2dfce5ac8b3e8c58baaf80204/README.md"
     },
@@ -89,7 +89,7 @@
       "source": "https://kth.box.com/s/8w67epq680y3pwq6ggudftp8l3e91iyt",
       "docker": "",
       "models": [],
-      "description": "",
+      "description": "An ensemble using focal loss, per image normalization and spatial attention.",
       "icon": "",
       "readme": "https://gist.githubusercontent.com/MartinHjelmare/20a4a0e9c2f142d745442e82cb191818/raw/156a4d89bbb48c089f6301ea0f3248df6b96c716/README.md"
     },
@@ -124,7 +124,7 @@
       "source": "https://kth.box.com/s/hcs1aydkx5q9hb5ynxfyn3qbwl0izj9x",
       "docker": "",
       "models": [],
-      "description": "",
+      "description": "An ensemble of diverse and highly optimized CNN models, using hill climbing and weighted voting.",
       "icon": "",
       "readme": "https://gist.githubusercontent.com/MartinHjelmare/3920f683106d753527a470f8702ea884/raw/2aa2a955b877c4b24dd5393a5cb1d9a3cdc91d97/README.md"
     },
@@ -148,7 +148,7 @@
       "source": "",
       "docker": "",
       "models": [],
-      "description": "",
+      "description": "An ensemble of CNN models using image augmentation, a multi-layer perceptron network and MultiLabelSoftMarginLoss.",
       "icon": "",
       "readme": "https://gist.githubusercontent.com/MartinHjelmare/e076ae80da5bf4a8cf714d4d514c4bbd/raw/445d0610c220138b83bd4dbcd29a67d7419f048f/README.md"
     },
@@ -174,7 +174,7 @@
       "source": "",
       "docker": "",
       "models": [],
-      "description": "",
+      "description": "14 CNN models ensembled via LightGBM stacking, optimized with Wadam, using focal and LSEP loss.",
       "icon": "",
       "readme": "https://gist.githubusercontent.com/MartinHjelmare/a7ce9ae7ce1b65f2ed99c7f3e4c2e262/raw/d830494c2d22759f081ad3b014ba68378938b7db/README.md"
     },
@@ -198,7 +198,7 @@
       "source": "",
       "docker": "",
       "models": [],
-      "description": "",
+      "description": "An ensemble of three CNN models.",
       "icon": "",
       "readme": "https://gist.githubusercontent.com/MartinHjelmare/b7d9ea1eda6cea818c1feaec9887279e/raw/404c50f18cc9f44b6af5b018384c75395fb3fd8c/README.md"
     },
