@@ -69,8 +69,7 @@ export default {
   mounted() {},
   methods: {
     showDetails(id) {
-      let routeData = this.$router.resolve({ path: "/model/" + id });
-      window.open(routeData.href, "_blank");
+      this.$router.push({ path: "/model/" + id });
     }
   }
 };
