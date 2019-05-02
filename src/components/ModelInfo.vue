@@ -11,7 +11,6 @@
           modelInfo.framework
         }}</md-chip>
         <md-chip
-          v-if="authors"
           v-for="author in authors"
           :key="author"
           class="md-primary"
