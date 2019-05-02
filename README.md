@@ -15,7 +15,7 @@ A collection of deep learning models for analyzing the Human Protein Atlas image
 * HPA-model-Random Walk
 
 # Development
-The model zoo is built using Vue.js. Make sure you have [`node`](https://nodejs.org/en/) installed.
+The model zoo is built using [Vue.js](https://vuejs.org/). Make sure you have [`node`](https://nodejs.org/en/) installed.
 
 ## Install
 
