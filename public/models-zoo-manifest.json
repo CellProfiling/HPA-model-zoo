@@ -1,85 +1,249 @@
 {
- "name": "HPA Model Zoo",
- "version": "0.1.0",
- "models": [
-  {
-   "repo": "https://github.com/CellProfiling/HPA-model-template",
-   "license": "MIT",
-   "models": [
+  "name": "HPA Model Zoo",
+  "version": "0.1.0",
+  "models": [
     {
-     "name": "Loc-CAT-1",
-     "tags": [
-      "Tensorflow",
-      "Classification"
-     ],
-     "author": "Sullivan et al.",
-     "citeAs": "Sullivan et al. Deep learning is combined with massive-scale citizen science to improve large-scale image classification. Nat. Biotechnol. 36, 820–828 (2018).",
-     "email": "",
-     "requirements": "docker: tensorflow/tensorflow",
-     "entrypoints": {
-      "train": "python src/training_demo.py",
-      "predict": "python src/prediction_demo.py"
-     },
-     "description": "Loc-CAT is a generalized tool for annotating proteins with multiple localizations from images and generalizes across a large number of cell types.",
-     "icon": "😺"
+      "name": "HPA-model-example",
+      "tags": [
+        "classification"
+      ],
+      "framework": "tensorflow",
+      "author": [
+        "Gordon MacMillan"
+      ],
+      "citeAs": "",
+      "email": "",
+      "source": "https://github.com/oeway/HPA-model-example",
+      "docker": "",
+      "models": [
+        "resnet-34",
+        "resnet-50",
+        "resnet-101",
+        "resnet-152"
+      ],
+      "description": "Using Kubeflow and Kubernetes to distribute training of a classifier for sub-cellular protein patterns in human cells.",
+      "icon": "",
+      "readme": "https://raw.githubusercontent.com/oeway/HPA-model-example/master/README.md"
     },
     {
-     "name": "Loc-CAT-2",
-     "tags": [
-      "PyTorch"
-     ],
-     "requirements": [
-      "pip: pytorch==1.0"
-     ],
-     "entrypoints": {
-      "train": "python src/training_demo_2.py",
-      "predict": "python src/prediction_demo_2.py"
-     },
-     "description": "Loc-CAT-2 is a generalized tool for annotating proteins with multiple localizations from images and generalizes across a large number of cell types.",
-     "icon": ""
+      "name": "HPA-model-bestfitting",
+      "tags": [
+        "classification",
+        "densenet-121",
+        "inception-v3",
+        "resnet-34",
+        "resnet-50"
+      ],
+      "framework": "pytorch",
+      "author": [
+        "Shubin Dai"
+      ],
+      "citeAs": "",
+      "email": "",
+      "source": "https://kth.box.com/s/gw43cvngx6quknq8ana9um1xx3ajhi4a",
+      "docker": "",
+      "models": [],
+      "description": "A CNN model using focal loss and image augmentation, optimized with Adam optimizer.",
+      "icon": "",
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/a8935e90614eff087e8fe034329f82df/raw/2bc11a1d7de717557b0ba148a7904ccd12242452/README.md"
+    },
+    {
+      "name": "HPA-model-WAIR",
+      "tags": [
+        "classification",
+        "densenet-121",
+        "densenet-169",
+        "ibn-densenet-121",
+        "opencv",
+        "scikit-learn",
+        "se-resnext-50",
+        "xception"
+      ],
+      "framework": "pytorch",
+      "author": [
+        "Jun Lan"
+      ],
+      "citeAs": "",
+      "email": "",
+      "source": "https://kth.box.com/s/y6xc7ok4dy76sbza4llh90uwunda9lj9",
+      "docker": "",
+      "models": [],
+      "description": "Seven CNN models, using multiple different architectures, ensembled through averaging.",
+      "icon": "",
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/9cf9f4509db7a6ddee73a3c15f117756/raw/84d645797d389cc2dfce5ac8b3e8c58baaf80204/README.md"
+    },
+    {
+      "name": "HPA-model-pudae",
+      "tags": [
+        "classification",
+        "inception-v3",
+        "resnet-34",
+        "se-resnext-50"
+      ],
+      "framework": "pytorch",
+      "author": [
+        "Park Jinmo"
+      ],
+      "citeAs": "",
+      "email": "",
+      "source": "https://kth.box.com/s/8w67epq680y3pwq6ggudftp8l3e91iyt",
+      "docker": "",
+      "models": [],
+      "description": "An ensemble using focal loss, per image normalization and spatial attention.",
+      "icon": "",
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/20a4a0e9c2f142d745442e82cb191818/raw/156a4d89bbb48c089f6301ea0f3248df6b96c716/README.md"
+    },
+    {
+      "name": "HPA-model-wienerschnitzelgemeinschaft",
+      "tags": [
+        "airnet-50",
+        "airnext-50",
+        "cbam",
+        "classification",
+        "hill-climbing",
+        "inception-resnet-v2",
+        "inception-v3",
+        "preresnet-50",
+        "resnet-18",
+        "resnet-34",
+        "resnet-50",
+        "resnet-101",
+        "se-resnext-50"
+      ],
+      "framework": "pytorch",
+      "author": [
+        "Shaikat Mahmood Galib",
+        "Christof Henkel",
+        "Kevin Hwang",
+        "Dmytro Poplavskiy",
+        "Bojan Tunguz",
+        "Russ Wolfinger"
+      ],
+      "citeAs": "",
+      "email": "",
+      "source": "https://kth.box.com/s/hcs1aydkx5q9hb5ynxfyn3qbwl0izj9x",
+      "docker": "",
+      "models": [],
+      "description": "An ensemble of diverse and highly optimized CNN models, using hill climbing and weighted voting.",
+      "icon": "",
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/3920f683106d753527a470f8702ea884/raw/2aa2a955b877c4b24dd5393a5cb1d9a3cdc91d97/README.md"
+    },
+    {
+      "name": "HPA-model-vpp",
+      "tags": [
+        "classification",
+        "inception-v3",
+        "inception-v4",
+        "multilayer-perceptron",
+        "xception"
+      ],
+      "framework": "pytorch",
+      "author": [
+        "Yinzheng Gu",
+        "Chuanpeng Li",
+        "Jinbin Xie"
+      ],
+      "citeAs": "",
+      "email": "",
+      "source": "",
+      "docker": "",
+      "models": [],
+      "description": "An ensemble of CNN models using image augmentation, a multi-layer perceptron network and MultiLabelSoftMarginLoss.",
+      "icon": "",
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/e076ae80da5bf4a8cf714d4d514c4bbd/raw/445d0610c220138b83bd4dbcd29a67d7419f048f/README.md"
+    },
+    {
+      "name": "HPA-model-One More Layer Of Stacking",
+      "tags": [
+        "bn-inception",
+        "classification",
+        "inception-v4",
+        "lightgbm",
+        "se-resnext-50",
+        "xception"
+      ],
+      "framework": "pytorch",
+      "author": [
+        "Dmitry Buslov",
+        "Sergei Fironov",
+        "Alexander Kiselev",
+        "Dmytro Panchenko"
+      ],
+      "citeAs": "",
+      "email": "",
+      "source": "",
+      "docker": "",
+      "models": [],
+      "description": "14 CNN models ensembled via LightGBM stacking, optimized with Wadam, using focal and LSEP loss.",
+      "icon": "",
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/a7ce9ae7ce1b65f2ed99c7f3e4c2e262/raw/d830494c2d22759f081ad3b014ba68378938b7db/README.md"
+    },
+    {
+      "name": "HPA-model-conv is all you need",
+      "tags": [
+        "classification",
+        "inception-v3",
+        "se-resnext-50",
+        "xception"
+      ],
+      "framework": "pytorch",
+      "author": [
+        "Xuan Cao",
+        "Runmin Wei",
+        "Yuanhao Wu",
+        "Xun Zhu"
+      ],
+      "citeAs": "",
+      "email": "",
+      "source": "",
+      "docker": "",
+      "models": [],
+      "description": "An ensemble of three CNN models.",
+      "icon": "",
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/b7d9ea1eda6cea818c1feaec9887279e/raw/404c50f18cc9f44b6af5b018384c75395fb3fd8c/README.md"
+    },
+    {
+      "name": "HPA-model-NTU_MiRA",
+      "tags": [
+        "classification",
+        "resnet-34"
+      ],
+      "framework": "tensorflow",
+      "author": [
+        "Kuan-Lun Tseng"
+      ],
+      "citeAs": "",
+      "email": "",
+      "source": "",
+      "docker": "",
+      "models": [],
+      "description": "A CNN with large input size (1024 ⨉ 1024 px) using fixed batch-normalization and data distillation.",
+      "icon": "",
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/fabd73673ff187c0fdd976cbda73e89b/raw/03e4dd4501420441f0c4f199d2dbe1d2e7943c71/README.md"
+    },
+    {
+      "name": "HPA-model-Random Walk",
+      "tags": [
+        "attention-gate",
+        "classification",
+        "resnet-18"
+      ],
+      "framework": "pytorch",
+      "author": [
+        "Zhifeng Gao",
+        "Cheng Ju",
+        "Xiaohan Yi",
+        "Hongdong Zheng"
+      ],
+      "citeAs": "",
+      "email": "",
+      "source": "",
+      "docker": "",
+      "models": [],
+      "description": "",
+      "icon": "",
+      "readme": "https://gist.githubusercontent.com/MartinHjelmare/1c79904801ba1097401f9afc20638284/raw/ff36f938bae7497f10cca0b034c76ead2ff51d9b/README.md"
     }
-   ]
-  },
-  {
-   "name": "HPA-model-example",
-   "tags": [
-    "Tensorflow",
-    "Classification"
-   ],
-   "author": "Gordon MacMillan",
-   "citeAs": "",
-   "email": "",
-   "source": "https://github.com/oeway/HPA-model-example",
-   "docker": "",
-   "models": [
-    "resnet34",
-    "resnet50",
-    "resnet101",
-    "resnet152"
-   ],
-   "description": "",
-   "icon": ""
-  },
-  {
-   "name": "HPA-model-bestfitting",
-   "tags": [
-    "Tensorflow",
-    "Classification"
-   ],
-   "author": "Gordon MacMillan",
-   "citeAs": "",
-   "email": "",
-   "source": "https://kth.box.com/s/d5tk5xfdkb0sbj4329qj4fen6sp5jts5",
-   "docker": "",
-   "models": [
-    "resnet34",
-    "resnet50",
-    "resnet101",
-    "resnet152"
-   ],
-   "description": "",
-   "icon": ""
-  }
- ],
- "model_count": 3
+  ],
+  "model_count": 3
 }

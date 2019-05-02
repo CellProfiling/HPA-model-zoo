@@ -9,18 +9,18 @@
       <md-ripple>
         <md-card-header>
           <div class="md-title">{{ m.name }}</div>
-          <!-- <div class="md-subhead">{{ m.name }}</div> -->
-          <md-chip
-            v-for="tag in m.tags"
-            :key="tag"
-            class="md-primary"
-            md-clickable
-            >{{ tag }}</md-chip
-          >
         </md-card-header>
 
         <md-card-content>
           {{ m.description }}
+        </md-card-content>
+        <md-card-content>
+          <md-chip class="md-accent">{{ m.framework }}</md-chip>
+        </md-card-content>
+        <md-card-content>
+          <md-chip v-for="tag in m.tags" :key="tag" class="md-primary">{{
+            tag
+          }}</md-chip>
         </md-card-content>
 
         <md-card-actions>
@@ -31,14 +31,6 @@
         </md-card-actions>
       </md-ripple>
     </md-card>
-    <!-- <md-dialog :md-active.sync="showDetailsDialog" :md-click-outside-to-close="false" :md-close-on-esc="false">
-      <md-dialog-content>
-
-      </md-dialog-content>
-      <md-dialog-actions>
-        <md-button class="md-primary" @click="showDetailsDialog=false">Close</md-button>
-      </md-dialog-actions>
-    </md-dialog> -->
   </div>
 </template>
 
@@ -48,11 +40,16 @@ import axios from "axios";
 const empty_model = {
   name: "No Model Available",
   tags: [],
-  authors: [],
+  framework: "",
+  author: [],
   citeAs: "",
+  email: "",
   source: "",
+  docker: "",
+  models: [],
   description: "",
-  icon: ""
+  icon: "",
+  readme: ""
 };
 
 export default {
@@ -82,7 +79,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .md-layout-item {
-  height: 280px;
+  width: 320px;
   margin-top: 8px;
   margin-bottom: 8px;
   transition: 0.3s $md-transition-stand-timing;
