@@ -4,12 +4,29 @@ A collection of deep learning models for analyzing the Human Protein Atlas image
 # Models
 * [HPA-model-template](https://github.com/CellProfiling/HPA-model-template)
 * [HPA-model-example](https://github.com/oeway/HPA-model-example)
-* [HPA-model-bestfitting](https://github.com/CellProfiling/HPA-model-bestfitting)
-* [HPA-model-WAIR](https://kth.box.com/s/cjk48i7slkxpzixada20aal66kyjl24e)
-* [HPA-model-pudae](https://kth.box.com/s/vxsttxmlu1ord7kg11639sy96iqkkgxz)
-* [HPA-model-wienerschnitzelgemeinschaft](https://kth.box.com/s/e6rzs8ghru3rriah987d5hxso7xvmi0c)
-* [HPA-model-vpp](https://kth.box.com/s/7jxegv0kmfrixfnknwcaxqjgqhm0bpqm)
-* [HPA-model-One More Layer](https://kth.box.com/s/xc2mdvyor38a6oym6n77vzth9g5ej7as)
-* [HPA-model-conv is all you need](https://kth.box.com/s/jhwpbvbn5zzanhk0q3pqym3vcoeqci63)
-* [HPA-model-NTU_MiRA](https://kth.box.com/s/gpqolo40na8k78aggmu4rxh5eh60g2pj)
-* [HPA-model-Random Walk](https://kth.box.com/s/9vi6t7w4f7vkjtt9c2h3sv21vqobpuns)
+* [HPA-model-bestfitting](https://kth.box.com/s/gw43cvngx6quknq8ana9um1xx3ajhi4a)
+* [HPA-model-WAIR](https://kth.box.com/s/y6xc7ok4dy76sbza4llh90uwunda9lj9)
+* [HPA-model-pudae](https://kth.box.com/s/8w67epq680y3pwq6ggudftp8l3e91iyt)
+* [HPA-model-wienerschnitzelgemeinschaft](https://kth.box.com/s/hcs1aydkx5q9hb5ynxfyn3qbwl0izj9x)
+* HPA-model-vpp
+* HPA-model-One More Layer
+* HPA-model-conv is all you need
+* HPA-model-NTU_MiRA
+* HPA-model-Random Walk
+
+# Development
+The model zoo is built using [Vue.js](https://vuejs.org/). Make sure you have [`node`](https://nodejs.org/en/) installed.
+
+## Install
+
+
+1. Clone https://github.com/CellProfiling/HPA-model-zoo to a folder.
+  ```
+  git clone git@github.com:CellProfiling/HPA-model-zoo.git
+  cd HPA-model-zoo
+  ```
+2. Run `npm install` in the folder to install the dependencies
+3. Run `npm run serve`to start a dev server which supports hot reloading when you edit the files. Go and see it through `http://localhost:8000/#/`.
+4. For vue-material UI elements, you can find those here: https://vuematerial.io/.
+5. When you have made the changes, commit in a new branch and make a pull request to our GitHub repository.
+6. When the pull request is merged and you are ready to publish, run `npm run deploy` from the master branch, which will build your source to static files and directly push to the github pages branch.
