@@ -13,3 +13,20 @@ A collection of deep learning models for analyzing the Human Protein Atlas image
 * HPA-model-conv is all you need
 * HPA-model-NTU_MiRA
 * HPA-model-Random Walk
+
+# Development
+The model zoo is built using Vue.js. Make sure you have [`node`](https://nodejs.org/en/) installed.
+
+## Install
+
+
+1. Clone https://github.com/CellProfiling/HPA-model-zoo to a folder.
+  ```
+  git clone git@github.com:CellProfiling/HPA-model-zoo.git
+  cd HPA-model-zoo
+  ```
+2. Run `npm install` in the folder to install the dependencies
+3. Run `npm run serve`to start a dev server which supports hot reloading when you edit the files. Go and see it through `http://localhost:8000/#/`.
+4. For vue-material UI elements, you can find those here: https://vuematerial.io/.
+5. When you have made the changes, commit in a new branch and make a pull request to our GitHub repository.
+6. When the pull request is merged and you are ready to publish, run `npm run deploy` from the master branch, which will build your source to static files and directly push to the github pages branch.
