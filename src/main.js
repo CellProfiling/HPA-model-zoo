@@ -4,6 +4,7 @@ import VueMaterial from "vue-material";
 import "vue-material/dist/vue-material.min.css";
 import "vue-material/dist/theme/default.css";
 import VueRouter from "vue-router";
+import ModelAbout from "./components/ModelAbout.vue";
 import ModelZoo from "./components/ModelZoo.vue";
 import ModelInfo from "./components/ModelInfo.vue";
 import ManifestGenerator from "./components/ManifestGenerator.vue";
@@ -14,6 +15,7 @@ Vue.use(VueMaterial);
 
 // register
 Vue.component("model-zoo", ModelZoo);
+Vue.component("model-about", ModelAbout);
 Vue.component("model-info", ModelInfo);
 Vue.component("manifest-generator", ManifestGenerator);
 
@@ -21,6 +23,7 @@ Vue.config.productionTip = false;
 
 const routes = [
   { path: "/", component: ModelZoo },
+  { path: "/about", component: ModelAbout },
   { path: "/model/:id", component: ModelInfo },
   { path: "/generator", component: ManifestGenerator }
 ];

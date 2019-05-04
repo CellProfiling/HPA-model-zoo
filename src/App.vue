@@ -11,6 +11,23 @@
           <br />
           <span class="site-title">Human Protein Atlas Model Zoo</span>
         </div>
+        <div class="md-toolbar-section-end">
+          <md-menu md-size="big" md-direction="bottom-end">
+            <md-button class="md-icon-button" md-menu-trigger>
+              <md-icon>more_vert</md-icon>
+            </md-button>
+            <md-menu-content>
+              <md-menu-item v-if="currentPath != '/'" @click="goHome()">
+                <span>Home</span>
+                <md-icon>home</md-icon>
+              </md-menu-item>
+              <md-menu-item v-if="currentPath != '/about/'" @click="goAbout()">
+                <span>About</span>
+                <md-icon>info</md-icon>
+              </md-menu-item>
+            </md-menu-content>
+          </md-menu>
+        </div>
       </div>
     </md-app-toolbar>
 
@@ -22,7 +39,20 @@
 
 <script>
 export default {
-  name: "app"
+  name: "app",
+  computed: {
+    currentPath: function() {
+      return this.$route.path;
+    }
+  },
+  methods: {
+    goHome() {
+      this.$router.push({ path: "/" });
+    },
+    goAbout() {
+      this.$router.push({ path: "/about/" });
+    }
+  }
 };
 </script>
 
