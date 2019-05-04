@@ -17,13 +17,16 @@
               <md-icon>more_vert</md-icon>
             </md-button>
             <md-menu-content>
-              <md-menu-item @click="showAbout()">
+              <md-menu-item v-if="currentPath != '/'" @click="goHome()">
+                <span>Home</span>
+                <md-icon>home</md-icon>
+              </md-menu-item>
+              <md-menu-item v-if="currentPath != '/about/'" @click="goAbout()">
                 <span>About</span>
                 <md-icon>info</md-icon>
               </md-menu-item>
             </md-menu-content>
           </md-menu>
-
         </div>
       </div>
     </md-app-toolbar>
@@ -37,8 +40,16 @@
 <script>
 export default {
   name: "app",
+  computed: {
+    currentPath: function() {
+      return this.$route.path;
+    }
+  },
   methods: {
-    showAbout() {
+    goHome() {
+      this.$router.push({ path: "/" });
+    },
+    goAbout() {
       this.$router.push({ path: "/about/" });
     }
   }
