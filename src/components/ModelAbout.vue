@@ -1,11 +1,14 @@
 <template>
-  <!-- eslint-disable vue/no-v-html -->
-  <div
-    v-if="about && about.trim() != ''"
-    style="padding-left: 10px; padding-right: 5px;"
-    v-html="marked(about, { sanitize: true })"
-  ></div>
-  <h3 v-else>This page has no text yet!</h3>
+  <div class="about">
+    <div class="md-layout md-gutter md-alignment-left">
+      <!-- eslint-disable vue/no-v-html -->
+      <div
+        v-if="about && about.trim() != ''"
+        v-html="marked(about, { sanitize: true })"
+      ></div>
+      <h3 v-else>This page has no text yet!</h3>
+    </div>
+  </div>
 </template>
 
 <script>
