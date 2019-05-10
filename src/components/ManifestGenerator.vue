@@ -303,9 +303,9 @@ export default {
     },
     exportUser() {
       this.sending = true;
+
       const user = JSON.stringify(this.form);
       const blob = new Blob([user], { type: "text/plain;charset=utf-8" });
-      //const FileSaver = require("file-saver");
       saveAs(blob, "exported_user.json");
 
       this.lastModel = `${this.form.modelName} ${this.form.author}`;
@@ -323,7 +323,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .md-progress-bar {
   position: absolute;
   top: 0;
