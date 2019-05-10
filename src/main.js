@@ -25,18 +25,12 @@ const routes = [
   { path: "/", component: ModelZoo },
   { path: "/about", component: ModelAbout },
   { path: "/model/:id", component: ModelInfo },
-  { path: "/generator", component: ManifestGenerator }
+  { path: "/generator", component: ManifestGenerator },
 ];
 
 const router = new VueRouter({
-  routes
+  routes,
 });
-
-var absolutePath = function(href) {
-  var link = document.createElement("a");
-  link.href = href;
-  return link.href;
-};
 
 const store = {};
 const getModels = () => {
@@ -76,9 +70,9 @@ const getModels = () => {
 store.getModels = getModels;
 
 new Vue({
+  data: {
+    store: store,
+  },
   render: h => h(App),
   router,
-  data: {
-    store: store
-  }
 }).$mount("#app");

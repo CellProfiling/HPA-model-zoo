@@ -1,7 +1,8 @@
 <template>
+  <!-- eslint-disable vue/no-v-html -->
   <div
-    style="padding-left: 10px; padding-right: 5px;"
     v-if="about && about.trim() != ''"
+    style="padding-left: 10px; padding-right: 5px;"
     v-html="marked(about, { sanitize: true })"
   ></div>
   <h3 v-else>This page has no text yet!</h3>
@@ -16,7 +17,7 @@ export default {
   name: "model-about",
   data() {
     return {
-      about: ""
+      about: "",
     };
   },
   mounted() {
@@ -30,7 +31,7 @@ export default {
   methods: {
     updateAbout(data) {
       this.about = data;
-    }
-  }
+    },
+  },
 };
 </script>

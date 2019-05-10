@@ -5,6 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "check-format": "prettier --check \"{scripts,src,tests}/**/!(*@(.png))\"",
+    "format": "prettier --write \"{scripts,src,tests}/**/!(*@(.png))\"",
     "lint": "vue-cli-service lint",
     "deploy": "npm run build && node scripts/deploy.js"
   },
@@ -12,7 +14,6 @@
     "ajv": "^6.10.0",
     "ajv-keywords": "^3.4.0",
     "axios": "^0.18.0",
-    "eslint": "^5.13.0",
     "file-saver": "^2.0.0",
     "flatted": "^2.0.0",
     "marked": "^0.6.2",
@@ -25,12 +26,14 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.3.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
     "@vue/cli-service": "^3.6.0",
     "@vue/eslint-config-prettier": "^4.0.1",
     "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "gh-pages": "^2.0.1",
+    "prettier": "1.17.0",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
@@ -39,12 +42,19 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential"
+      "plugin:vue/recommended",
+      "@vue/prettier"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": "off",
+      "vue/name-property-casing": ["error", "kebab-case"]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
+  },
+  "prettier": {
+    "trailingComma": "es5"
   },
   "postcss": {
     "plugins": {

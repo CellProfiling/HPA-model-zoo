@@ -14,9 +14,10 @@
           author
         }}</md-chip>
       </div>
+      <!-- eslint-disable vue/no-v-html -->
       <div
-        style="padding-left: 10px; padding-right: 5px;"
         v-if="docs && docs.trim() != ''"
+        style="padding-left: 10px; padding-right: 5px;"
         v-html="marked(docs, { sanitize: true })"
       ></div>
       <h3 v-else>Oops, this model has no documentation!</h3>
@@ -25,35 +26,29 @@
 </template>
 
 <script>
-import axios from "axios";
 import marked from "marked";
 
 import { loadContent } from "../Helper";
-
-function getInfoUrl(url) {
-  var repo = url.replace("https://github.com/", "");
-  return "https://raw.githubusercontent.com/" + repo + "/master/README.md";
-}
 
 export default {
   name: "model-info",
   props: {
     name: {
       type: String,
-      default: null
-    }
-  },
-  computed: {
-    authors: function() {
-      return this.modelInfo ? this.modelInfo.author : [];
-    }
+      default: null,
+    },
   },
   data() {
     return {
       docs: "",
       modelsById: null,
-      modelInfo: null
+      modelInfo: null,
     };
+  },
+  computed: {
+    authors: function() {
+      return this.modelInfo ? this.modelInfo.author : [];
+    },
   },
   mounted() {
     this.store = this.$root.$data.store;
@@ -75,8 +70,8 @@ export default {
   methods: {
     updateDocs(data) {
       this.docs = data;
-    }
-  }
+    },
+  },
 };
 </script>
 

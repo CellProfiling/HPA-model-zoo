@@ -16,16 +16,16 @@
               <md-field :class="getValidationClass('modelName')">
                 <label for="model-name">Model name</label>
                 <md-input
-                  name="model-name"
                   id="model-name"
-                  autocomplete="name"
                   v-model="form.modelName"
+                  name="model-name"
+                  autocomplete="name"
                   :disabled="sending"
                 />
-                <span class="md-error" v-if="!$v.form.modelName.required"
+                <span v-if="!$v.form.modelName.required" class="md-error"
                   >The model name is required</span
                 >
-                <span class="md-error" v-else-if="!$v.form.modelName.minLength"
+                <span v-else-if="!$v.form.modelName.minLength" class="md-error"
                   >Invalid model name</span
                 >
               </md-field>
@@ -35,16 +35,16 @@
               <md-field :class="getValidationClass('source')">
                 <label for="source">Source</label>
                 <md-input
-                  name="source"
                   id="source"
-                  autocomplete="url"
                   v-model="form.source"
+                  name="source"
+                  autocomplete="url"
                   :disabled="sending"
                 />
-                <span class="md-error" v-if="!$v.form.source.required"
+                <span v-if="!$v.form.source.required" class="md-error"
                   >The source is required</span
                 >
-                <span class="md-error" v-else-if="!$v.form.source.url"
+                <span v-else-if="!$v.form.source.url" class="md-error"
                   >Invalid source</span
                 >
               </md-field>
@@ -56,16 +56,16 @@
               <md-field :class="getValidationClass('author')">
                 <label for="author">Author</label>
                 <md-input
-                  name="author"
                   id="author"
-                  autocomplete="family-name"
                   v-model="form.author"
+                  name="author"
+                  autocomplete="family-name"
                   :disabled="sending"
                 />
-                <span class="md-error" v-if="!$v.form.author.required"
+                <span v-if="!$v.form.author.required" class="md-error"
                   >The author is required</span
                 >
-                <span class="md-error" v-else-if="!$v.form.author.minLength"
+                <span v-else-if="!$v.form.author.minLength" class="md-error"
                   >Invalid author</span
                 >
               </md-field>
@@ -75,16 +75,16 @@
               <md-field :class="getValidationClass('citeAs')">
                 <label for="cite-as">Cite as</label>
                 <md-input
-                  name="cite-as"
                   id="cite-as"
-                  autocomplete="on"
                   v-model="form.citeAs"
+                  name="cite-as"
+                  autocomplete="on"
                   :disabled="sending"
                 />
-                <span class="md-error" v-if="!$v.form.citeAs.required"
+                <span v-if="!$v.form.citeAs.required" class="md-error"
                   >Cite as is required</span
                 >
-                <span class="md-error" v-else-if="!$v.form.citeAs.minLength"
+                <span v-else-if="!$v.form.citeAs.minLength" class="md-error"
                   >Invalid cite as</span
                 >
               </md-field>
@@ -96,18 +96,18 @@
               <md-field :class="getValidationClass('scripts.train')">
                 <label for="train">Train script</label>
                 <md-input
-                  name="train"
                   id="train"
-                  autocomplete="on"
                   v-model="form.scripts.train"
+                  name="train"
+                  autocomplete="on"
                   :disabled="sending"
                 />
-                <span class="md-error" v-if="!$v.form.scripts.train.required"
+                <span v-if="!$v.form.scripts.train.required" class="md-error"
                   >The train script is required</span
                 >
                 <span
-                  class="md-error"
                   v-else-if="!$v.form.scripts.train.minLength"
+                  class="md-error"
                   >Invalid train script</span
                 >
               </md-field>
@@ -117,18 +117,18 @@
               <md-field :class="getValidationClass('scripts.predict')">
                 <label for="predict">Predict script</label>
                 <md-input
-                  name="predict"
                   id="predict"
-                  autocomplete="on"
                   v-model="form.scripts.predict"
+                  name="predict"
+                  autocomplete="on"
                   :disabled="sending"
                 />
-                <span class="md-error" v-if="!$v.form.scripts.predict.required"
+                <span v-if="!$v.form.scripts.predict.required" class="md-error"
                   >The predict script is required</span
                 >
                 <span
-                  class="md-error"
                   v-else-if="!$v.form.scripts.predict.minLength"
+                  class="md-error"
                   >Invalid predict script</span
                 >
               </md-field>
@@ -140,9 +140,9 @@
               <md-field :class="getValidationClass('gender')">
                 <label for="gender">Gender</label>
                 <md-select
-                  name="gender"
                   id="gender"
                   v-model="form.gender"
+                  name="gender"
                   md-dense
                   :disabled="sending"
                 >
@@ -158,16 +158,16 @@
               <md-field :class="getValidationClass('icon')">
                 <label for="icon">Icon</label>
                 <md-input
-                  name="icon"
                   id="icon"
-                  autocomplete="on"
                   v-model="form.icon"
+                  name="icon"
+                  autocomplete="on"
                   :disabled="sending"
                 />
-                <span class="md-error" v-if="!$v.form.icon.required"
+                <span v-if="!$v.form.icon.required" class="md-error"
                   >The icon is required</span
                 >
-                <span class="md-error" v-else-if="!$v.form.icon.minLength"
+                <span v-else-if="!$v.form.icon.minLength" class="md-error"
                   >Invalid icon</span
                 >
               </md-field>
@@ -178,27 +178,27 @@
             <label for="description">Description</label>
             <md-input
               id="description"
+              v-model="form.description"
               name="description"
               autocomplete="on"
-              v-model="form.description"
               :disabled="sending"
             />
-            <span class="md-error" v-if="!$v.form.description.required"
+            <span v-if="!$v.form.description.required" class="md-error"
               >The description is required</span
             >
-            <span class="md-error" v-else-if="!$v.form.description.minLength"
+            <span v-else-if="!$v.form.description.minLength" class="md-error"
               >Invalid description</span
             >
           </md-field>
         </md-card-content>
 
-        <md-progress-bar md-mode="indeterminate" v-if="sending" />
+        <md-progress-bar v-if="sending" md-mode="indeterminate" />
 
         <md-card-actions>
           <md-button type="submit" class="md-primary" :disabled="sending"
             >Export</md-button
           >
-          <md-button class="md-accent" v-on:click="clearForm()"
+          <md-button class="md-accent" @click="clearForm()"
             >Clear form</md-button
           >
         </md-card-actions>
@@ -214,12 +214,13 @@
 <script>
 import { saveAs } from "file-saver";
 import { validationMixin } from "vuelidate";
-import { required, minLength, maxLength, url } from "vuelidate/lib/validators";
+import { required, minLength, url } from "vuelidate/lib/validators";
 
 export default {
   name: "manifest-generator",
   mixins: [validationMixin],
   data: () => ({
+    lastModel: null,
     form: {
       modelName: null,
       author: null,
@@ -227,56 +228,56 @@ export default {
       source: null,
       scripts: {
         train: null,
-        predict: null
+        predict: null,
       },
       gender: null,
       description: null,
-      icon: null
+      icon: null,
     },
     formExported: false,
     sending: false,
-    lastUser: null
+    lastUser: null,
   }),
   validations: {
     form: {
       modelName: {
         required,
-        minLength: minLength(2)
+        minLength: minLength(2),
       },
       author: {
         required,
-        minLength: minLength(2)
+        minLength: minLength(2),
       },
       citeAs: {
         required,
-        minLength: minLength(2)
+        minLength: minLength(2),
       },
       source: {
         required,
-        url: url()
+        url: url(),
       },
       scripts: {
         train: {
           required,
-          minLength: minLength(2)
+          minLength: minLength(2),
         },
         predict: {
           required,
-          minLength: minLength(2)
-        }
+          minLength: minLength(2),
+        },
       },
       description: {
         required,
-        maxLength: minLength(3)
+        maxLength: minLength(3),
       },
       gender: {
-        required
+        required,
       },
       icon: {
         required,
-        minLength: minLength(2)
-      }
-    }
+        minLength: minLength(2),
+      },
+    },
   },
   methods: {
     getValidationClass(fieldName) {
@@ -284,7 +285,7 @@ export default {
 
       if (field) {
         return {
-          "md-invalid": field.$invalid && field.$dirty
+          "md-invalid": field.$invalid && field.$dirty,
         };
       }
     },
@@ -304,8 +305,8 @@ export default {
       this.sending = true;
       const user = JSON.stringify(this.form);
       const blob = new Blob([user], { type: "text/plain;charset=utf-8" });
-      const FileSaver = require("file-saver");
-      FileSaver.saveAs(blob, "exported_user.json");
+      //const FileSaver = require("file-saver");
+      saveAs(blob, "exported_user.json");
 
       this.lastModel = `${this.form.modelName} ${this.form.author}`;
       this.formExported = true;
@@ -317,8 +318,8 @@ export default {
       if (!this.$v.$invalid) {
         this.exportUser();
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
