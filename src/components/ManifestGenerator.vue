@@ -217,7 +217,7 @@ import { validationMixin } from "vuelidate";
 import { required, minLength, url } from "vuelidate/lib/validators";
 
 export default {
-  name: "ManifestGenerator",
+  name: "manifest-generator",
   mixins: [validationMixin],
   data: () => ({
     lastModel: null,

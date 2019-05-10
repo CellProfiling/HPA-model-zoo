@@ -1,7 +1,7 @@
 <template>
   <div
-    style="padding-left: 10px; padding-right: 5px;"
     v-if="about && about.trim() != ''"
+    style="padding-left: 10px; padding-right: 5px;"
     v-html="marked(about, { sanitize: true })"
   ></div>
   <h3 v-else>This page has no text yet!</h3>

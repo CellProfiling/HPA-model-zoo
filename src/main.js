@@ -32,12 +32,6 @@ const router = new VueRouter({
   routes,
 });
 
-var absolutePath = function(href) {
-  var link = document.createElement("a");
-  link.href = href;
-  return link.href;
-};
-
 const store = {};
 const getModels = () => {
   return new Promise((resolve, reject) => {
@@ -76,9 +70,9 @@ const getModels = () => {
 store.getModels = getModels;
 
 new Vue({
-  render: h => h(App),
-  router,
   data: {
     store: store,
   },
+  render: h => h(App),
+  router,
 }).$mount("#app");

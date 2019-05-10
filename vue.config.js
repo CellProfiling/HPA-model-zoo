@@ -1,5 +1,4 @@
 // vue.config.js
-const path = require("path");
 const webpack = require("webpack");
 module.exports = {
   runtimeCompiler: true,
@@ -8,22 +7,21 @@ module.exports = {
   publicPath: process.env.NODE_ENV === "production" ? "/HPA-model-zoo/" : "/",
   devServer: {
     compress: true,
-    port: 8000
+    port: 8000,
   },
   configureWebpack: {
     module: {
       // for supressing webpack warnings
-      exprContextCritical: false
+      exprContextCritical: false,
     },
     plugins: [
       new webpack.DefinePlugin({
         "process.env": {
-          NODE_ENV: JSON.stringify(process.env.NODE_ENV || "development")
-        }
-      })
-    ]
+          NODE_ENV: JSON.stringify(process.env.NODE_ENV || "development"),
+        },
+      }),
+    ],
   },
-  chainWebpack: config => {},
   pluginOptions: {},
-  lintOnSave: false
+  lintOnSave: false,
 };

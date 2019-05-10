@@ -35,8 +35,6 @@
 </template>
 
 <script>
-import axios from "axios";
-
 const empty_model = {
   name: "No Model Available",
   tags: [],
