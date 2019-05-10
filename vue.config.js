@@ -1,11 +1,11 @@
 // vue.config.js
-const path = require('path')
-const webpack = require('webpack')
+const path = require("path");
+const webpack = require("webpack");
 module.exports = {
   runtimeCompiler: true,
-  outputDir: './dist',
-  assetsDir: 'static',
-  publicPath: process.env.NODE_ENV === 'production' ? '/HPA-model-zoo/' : '/',
+  outputDir: "./dist",
+  assetsDir: "static",
+  publicPath: process.env.NODE_ENV === "production" ? "/HPA-model-zoo/" : "/",
   devServer: {
     compress: true,
     port: 8000
@@ -17,14 +17,13 @@ module.exports = {
     },
     plugins: [
       new webpack.DefinePlugin({
-        'process.env': {
-          NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development')
+        "process.env": {
+          NODE_ENV: JSON.stringify(process.env.NODE_ENV || "development")
         }
       })
     ]
   },
-  chainWebpack: config => {
-  },
-  pluginOptions: {
-  }
-}
+  chainWebpack: config => {},
+  pluginOptions: {},
+  lintOnSave: false
+};
