@@ -40,19 +40,19 @@ export default {
   props: {
     name: {
       type: String,
-      default: null
-    }
+      default: null,
+    },
   },
   computed: {
     authors: function() {
       return this.modelInfo ? this.modelInfo.author : [];
-    }
+    },
   },
   data() {
     return {
       docs: "",
       modelsById: null,
-      modelInfo: null
+      modelInfo: null,
     };
   },
   mounted() {
@@ -75,8 +75,8 @@ export default {
   methods: {
     updateDocs(data) {
       this.docs = data;
-    }
-  }
+    },
+  },
 };
 </script>
 

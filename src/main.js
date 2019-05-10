@@ -25,11 +25,11 @@ const routes = [
   { path: "/", component: ModelZoo },
   { path: "/about", component: ModelAbout },
   { path: "/model/:id", component: ModelInfo },
-  { path: "/generator", component: ManifestGenerator }
+  { path: "/generator", component: ManifestGenerator },
 ];
 
 const router = new VueRouter({
-  routes
+  routes,
 });
 
 var absolutePath = function(href) {
@@ -79,6 +79,6 @@ new Vue({
   render: h => h(App),
   router,
   data: {
-    store: store
-  }
+    store: store,
+  },
 }).$mount("#app");

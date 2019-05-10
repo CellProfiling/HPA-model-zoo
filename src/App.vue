@@ -43,7 +43,7 @@ export default {
   computed: {
     currentPath: function() {
       return this.$route.path;
-    }
+    },
   },
   methods: {
     goHome() {
@@ -51,8 +51,8 @@ export default {
     },
     goAbout() {
       this.$router.push({ path: "/about/" });
-    }
-  }
+    },
+  },
 };
 </script>
 

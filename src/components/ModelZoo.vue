@@ -49,7 +49,7 @@ const empty_model = {
   models: [],
   description: "",
   icon: "",
-  readme: ""
+  readme: "",
 };
 
 export default {
@@ -57,7 +57,7 @@ export default {
   data() {
     return {
       models: [empty_model],
-      showDetailsDialog: false
+      showDetailsDialog: false,
     };
   },
   created() {
@@ -70,8 +70,8 @@ export default {
   methods: {
     showDetails(id) {
       this.$router.push({ path: "/model/" + id });
-    }
-  }
+    },
+  },
 };
 </script>
 

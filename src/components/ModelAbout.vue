@@ -16,7 +16,7 @@ export default {
   name: "model-about",
   data() {
     return {
-      about: ""
+      about: "",
     };
   },
   mounted() {
@@ -30,7 +30,7 @@ export default {
   methods: {
     updateAbout(data) {
       this.about = data;
-    }
-  }
+    },
+  },
 };
 </script>
