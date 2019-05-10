@@ -46,7 +46,8 @@
       "@vue/prettier"
     ],
     "rules": {
-      "no-console": "off"
+      "no-console": "off",
+      "vue/name-property-casing": ["error", "kebab-case"]
     },
     "parserOptions": {
       "parser": "babel-eslint"
