@@ -38,3 +38,12 @@ export default {
   },
 };
 </script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+.about {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+</style>
