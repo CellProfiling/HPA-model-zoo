@@ -14,6 +14,7 @@
           author
         }}</md-chip>
       </div>
+      <!-- eslint-disable vue/no-v-html -->
       <div
         v-if="docs && docs.trim() != ''"
         style="padding-left: 10px; padding-right: 5px;"

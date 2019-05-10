@@ -1,4 +1,5 @@
 <template>
+  <!-- eslint-disable vue/no-v-html -->
   <div
     v-if="about && about.trim() != ''"
     style="padding-left: 10px; padding-right: 5px;"
