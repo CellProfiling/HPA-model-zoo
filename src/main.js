@@ -35,12 +35,8 @@ const router = new VueRouter({
 const store = {};
 const getModels = () => {
   return new Promise((resolve, reject) => {
-    let baseUrl = "/";
-    if (process.env.NODE_ENV === "production") {
-      baseUrl = "https://cellprofiling.github.io/HPA-model-zoo/";
-    }
     axios
-      .get(baseUrl + "models-zoo-manifest.json")
+      .get(process.env.BASE_URL + "models-zoo-manifest.json")
       .then(response => {
         if (response && response.data && response.data.models) {
           const manifest = response.data;
