@@ -40,7 +40,9 @@
     },
     "extends": [
       "plugin:vue/recommended",
-      "@vue/prettier"
+      "eslint:recommended",
+      "@vue/prettier",
+      "plugin:prettier/recommended"
     ],
     "rules": {
       "no-console": "off",
