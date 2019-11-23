@@ -45,7 +45,7 @@
       "models": [],
       "description": "A CNN model using focal loss and image augmentation, optimized with Adam optimizer.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/a8935e90614eff087e8fe034329f82df/raw/2bc11a1d7de717557b0ba148a7904ccd12242452/README.md"
+      "readme": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/bestfitting/README.md"
     },
     {
       "name": "HPA-model-WAIR",
@@ -148,9 +148,9 @@
       "source": "",
       "docker": "",
       "models": [],
-      "description": "An ensemble of CNN models using image augmentation, a multi-layer perceptron network and MultiLabelSoftMarginLoss.",
+      "description": "An ensemble of seven CNN models and a multi-layer perceptron network, using image augmentation, multi scales, weighted sampling and MultiLabelSoftMargin loss.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/e076ae80da5bf4a8cf714d4d514c4bbd/raw/445d0610c220138b83bd4dbcd29a67d7419f048f/README.md"
+      "readme": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/vpp/README.md"
     },
     {
       "name": "HPA-model-One More Layer Of Stacking",
@@ -198,9 +198,9 @@
       "source": "",
       "docker": "",
       "models": [],
-      "description": "An ensemble of three CNN models.",
+      "description": "An ensemble of a cropping window CNN based on Xception, and two conventional CNNs based on SE-ResNext50 and InceptionV3.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/b7d9ea1eda6cea818c1feaec9887279e/raw/404c50f18cc9f44b6af5b018384c75395fb3fd8c/README.md"
+      "readme": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/conv_is_all_you_need/README.md"
     },
     {
       "name": "HPA-model-NTU_MiRA",
@@ -219,7 +219,7 @@
       "models": [],
       "description": "A CNN with large input size (1024 ⨉ 1024 px) using fixed batch-normalization and data distillation.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/fabd73673ff187c0fdd976cbda73e89b/raw/03e4dd4501420441f0c4f199d2dbe1d2e7943c71/README.md"
+      "readme": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/ntu_mira/README.md"
     },
     {
       "name": "HPA-model-Random Walk",
@@ -240,9 +240,9 @@
       "source": "",
       "docker": "",
       "models": [],
-      "description": "",
+      "description": "An ensemble model of three different resolutions based on single attention gated network.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/1c79904801ba1097401f9afc20638284/raw/ff36f938bae7497f10cca0b034c76ead2ff51d9b/README.md"
+      "readme": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/random_walk/README.md"
     }
   ],
   "model_count": 3
