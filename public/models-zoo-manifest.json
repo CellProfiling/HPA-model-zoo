@@ -240,9 +240,9 @@
       "source": "",
       "docker": "",
       "models": [],
-      "description": "",
+      "description": "An ensemble model of three different resolutions based on single attention gated network.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/1c79904801ba1097401f9afc20638284/raw/ff36f938bae7497f10cca0b034c76ead2ff51d9b/README.md"
+      "readme": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/random_walk/README.md"
     }
   ],
   "model_count": 3
