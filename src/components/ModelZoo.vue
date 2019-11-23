@@ -6,30 +6,28 @@
       class="md-layout-item md-medium-size-33 md-small-size-50 md-xsmall-size-100"
       md-with-hover
     >
-      <md-ripple>
-        <md-card-header>
-          <div class="md-title">{{ m.name }}</div>
-        </md-card-header>
+      <md-card-header>
+        <div class="md-title">{{ m.name }}</div>
+      </md-card-header>
 
-        <md-card-content>
-          {{ m.description }}
-        </md-card-content>
-        <md-card-content>
-          <md-chip class="md-accent">{{ m.framework }}</md-chip>
-        </md-card-content>
-        <md-card-content>
-          <md-chip v-for="tag in m.tags" :key="tag" class="md-primary">{{
-            tag
-          }}</md-chip>
-        </md-card-content>
+      <md-card-content>
+        {{ m.description }}
+      </md-card-content>
+      <md-card-content>
+        <md-chip class="md-accent">{{ m.framework }}</md-chip>
+      </md-card-content>
+      <md-card-content>
+        <md-chip v-for="tag in m.tags" :key="tag" class="md-primary">{{
+          tag
+        }}</md-chip>
+      </md-card-content>
 
-        <md-card-actions>
-          <md-button @click="showDetails(m.name)">Details</md-button>
-          <md-button v-if="m.source" target="_blank" :href="m.source"
-            >Get Model</md-button
-          >
-        </md-card-actions>
-      </md-ripple>
+      <md-card-actions>
+        <md-button @click="showDetails(m.name)">Details</md-button>
+        <md-button v-if="m.source" target="_blank" :href="m.source"
+          >Get Model</md-button
+        >
+      </md-card-actions>
     </md-card>
   </div>
 </template>
