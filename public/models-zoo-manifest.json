@@ -198,9 +198,9 @@
       "source": "",
       "docker": "",
       "models": [],
-      "description": "An ensemble of three CNN models.",
+      "description": "An ensemble of a cropping window CNN based on Xception, and two conventional CNNs based on SE-ResNext50 and InceptionV3.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/b7d9ea1eda6cea818c1feaec9887279e/raw/404c50f18cc9f44b6af5b018384c75395fb3fd8c/README.md"
+      "readme": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/conv_is_all_you_need/README.md"
     },
     {
       "name": "HPA-model-NTU_MiRA",
