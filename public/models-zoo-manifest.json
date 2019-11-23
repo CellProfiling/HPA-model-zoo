@@ -45,7 +45,7 @@
       "models": [],
       "description": "A CNN model using focal loss and image augmentation, optimized with Adam optimizer.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/a8935e90614eff087e8fe034329f82df/raw/2bc11a1d7de717557b0ba148a7904ccd12242452/README.md"
+      "readme": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/bestfitting/README.md"
     },
     {
       "name": "HPA-model-WAIR",
