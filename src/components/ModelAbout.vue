@@ -2,16 +2,14 @@
   <div class="about">
     <div class="md-layout md-gutter md-alignment-left">
       <!-- eslint-disable vue/no-v-html -->
-      <div
-        v-if="about && about.trim() != ''"
-        v-html="marked(about, { sanitize: true })"
-      ></div>
+      <div v-if="about" v-html="about"></div>
       <h3 v-else>This page has no text yet!</h3>
     </div>
   </div>
 </template>
 
 <script>
+import DOMPurify from "dompurify";
 import marked from "marked";
 
 import { loadContent } from "../Helper";
@@ -28,12 +26,10 @@ export default {
     const aboutPath = process.env.BASE_URL + "about/about.md";
     loadContent(aboutPath, this.updateAbout);
   },
-  created() {
-    this.marked = marked;
-  },
   methods: {
     updateAbout(data) {
-      this.about = data;
+      data = data.trim();
+      this.about = DOMPurify.sanitize(marked(data));
     },
   },
 };
