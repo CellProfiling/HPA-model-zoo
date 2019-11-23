@@ -148,9 +148,9 @@
       "source": "",
       "docker": "",
       "models": [],
-      "description": "An ensemble of CNN models using image augmentation, a multi-layer perceptron network and MultiLabelSoftMarginLoss.",
+      "description": "An ensemble of seven CNN models and a multi-layer perceptron network, using image augmentation, multi scales, weighted sampling and MultiLabelSoftMargin loss.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/e076ae80da5bf4a8cf714d4d514c4bbd/raw/445d0610c220138b83bd4dbcd29a67d7419f048f/README.md"
+      "readme": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/vpp/README.md"
     },
     {
       "name": "HPA-model-One More Layer Of Stacking",
