@@ -219,7 +219,7 @@
       "models": [],
       "description": "A CNN with large input size (1024 ⨉ 1024 px) using fixed batch-normalization and data distillation.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/fabd73673ff187c0fdd976cbda73e89b/raw/03e4dd4501420441f0c4f199d2dbe1d2e7943c71/README.md"
+      "readme": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/ntu_mira/README.md"
     },
     {
       "name": "HPA-model-Random Walk",
