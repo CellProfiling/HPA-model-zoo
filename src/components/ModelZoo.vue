@@ -15,6 +15,7 @@
       </md-card-content>
       <md-card-content>
         <md-chip class="md-accent">{{ m.framework }}</md-chip>
+        <md-chip v-if="m.license" class="md-primary">{{ m.license }}</md-chip>
       </md-card-content>
       <md-card-content>
         <md-chip v-for="tag in m.tags" :key="tag" class="md-primary">{{
@@ -38,6 +39,8 @@ const empty_model = {
   tags: [],
   framework: "",
   author: [],
+  license: "",
+  licenseUrl: "",
   citeAs: "",
   email: "",
   source: "",
