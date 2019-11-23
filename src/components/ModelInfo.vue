@@ -16,9 +16,9 @@
       </div>
       <!-- eslint-disable vue/no-v-html -->
       <div
-        v-if="docs && docs.trim() != ''"
+        v-if="docs"
         style="padding-left: 10px; padding-right: 5px;"
-        v-html="marked(docs, { sanitize: true })"
+        v-html="docs"
       ></div>
       <h3 v-else>Oops, this model has no documentation!</h3>
     </div>
@@ -26,6 +26,7 @@
 </template>
 
 <script>
+import DOMPurify from "dompurify";
 import marked from "marked";
 
 import { loadContent } from "../Helper";
@@ -64,12 +65,10 @@ export default {
       });
     }
   },
-  created() {
-    this.marked = marked;
-  },
   methods: {
     updateDocs(data) {
-      this.docs = data;
+      data = data.trim();
+      this.docs = DOMPurify.sanitize(marked(data));
     },
   },
 };
