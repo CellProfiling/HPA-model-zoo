@@ -12,6 +12,8 @@
         "Gordon MacMillan"
       ],
       "citeAs": "",
+      "license": "MIT",
+      "license-url": "https://opensource.org/licenses/MIT",
       "email": "",
       "source": "https://github.com/oeway/HPA-model-example",
       "docker": "",
@@ -39,6 +41,8 @@
         "Shubin Dai"
       ],
       "citeAs": "",
+      "license": "MIT",
+      "license-url": "https://opensource.org/licenses/MIT",
       "email": "",
       "source": "https://kth.box.com/s/gw43cvngx6quknq8ana9um1xx3ajhi4a",
       "docker": "",
@@ -64,6 +68,8 @@
         "Jun Lan"
       ],
       "citeAs": "",
+      "license": "",
+      "license-url": "",
       "email": "",
       "source": "https://kth.box.com/s/y6xc7ok4dy76sbza4llh90uwunda9lj9",
       "docker": "",
@@ -85,6 +91,8 @@
         "Park Jinmo"
       ],
       "citeAs": "",
+      "license": "",
+      "license-url": "",
       "email": "",
       "source": "https://kth.box.com/s/8w67epq680y3pwq6ggudftp8l3e91iyt",
       "docker": "",
@@ -120,6 +128,8 @@
         "Russ Wolfinger"
       ],
       "citeAs": "",
+      "license": "",
+      "license-url": "",
       "email": "",
       "source": "https://kth.box.com/s/hcs1aydkx5q9hb5ynxfyn3qbwl0izj9x",
       "docker": "",
@@ -144,6 +154,8 @@
         "Jinbin Xie"
       ],
       "citeAs": "",
+      "license": "MIT",
+      "license-url": "https://opensource.org/licenses/MIT",
       "email": "",
       "source": "",
       "docker": "",
@@ -170,6 +182,8 @@
         "Dmytro Panchenko"
       ],
       "citeAs": "",
+      "license": "",
+      "license-url": "",
       "email": "",
       "source": "",
       "docker": "",
@@ -194,6 +208,8 @@
         "Xun Zhu"
       ],
       "citeAs": "",
+      "license": "MIT",
+      "license-url": "https://opensource.org/licenses/MIT",
       "email": "",
       "source": "",
       "docker": "",
@@ -213,6 +229,8 @@
         "Kuan-Lun Tseng"
       ],
       "citeAs": "",
+      "license": "MIT",
+      "license-url": "https://opensource.org/licenses/MIT",
       "email": "",
       "source": "",
       "docker": "",
@@ -236,6 +254,8 @@
         "Hongdong Zheng"
       ],
       "citeAs": "",
+      "license": "MIT",
+      "license-url": "https://opensource.org/licenses/MIT",
       "email": "",
       "source": "",
       "docker": "",
