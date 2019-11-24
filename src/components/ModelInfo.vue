@@ -51,19 +51,14 @@ export default {
       return this.modelInfo ? this.modelInfo.author : [];
     },
   },
-  mounted() {
+  async mounted() {
     this.store = this.$root.$data.store;
-    if (this.store.modelsById) {
-      this.modelsById = this.store.modelsById;
-      this.modelInfo = this.modelsById[this.$route.params.id];
-      loadContent(this.modelInfo.readme, this.updateDocs);
-    } else {
-      this.store.getModels().then(() => {
-        this.modelsById = this.store.modelsById;
-        this.modelInfo = this.modelsById[this.$route.params.id];
-        loadContent(this.modelInfo.readme, this.updateDocs);
-      });
+    if (!this.store.modelsById) {
+      await this.store.getModels();
     }
+    this.modelsById = this.store.modelsById;
+    this.modelInfo = this.modelsById[this.$route.params.id];
+    loadContent(this.modelInfo.readme, this.updateDocs);
   },
   methods: {
     updateDocs(data) {
