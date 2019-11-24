@@ -10,6 +10,7 @@ module.exports = {
     port: 8000,
   },
   configureWebpack: {
+    devtool: "source-map",
     module: {
       // for supressing webpack warnings
       exprContextCritical: false,
