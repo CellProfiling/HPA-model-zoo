@@ -33,12 +33,6 @@ import { loadContent } from "../Helper";
 
 export default {
   name: "model-info",
-  props: {
-    name: {
-      type: String,
-      default: null,
-    },
-  },
   data() {
     return {
       docs: "",
