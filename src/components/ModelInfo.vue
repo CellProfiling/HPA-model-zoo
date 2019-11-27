@@ -20,7 +20,7 @@
         style="padding-left: 10px; padding-right: 5px;"
         v-html="docs"
       ></div>
-      <h3 v-else>Oops, this model has no documentation!</h3>
+      <md-progress-bar v-else md-mode="indeterminate"></md-progress-bar>
     </div>
   </div>
 </template>
@@ -65,18 +65,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.md-layout-item {
-  height: 280px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  transition: 0.3s $md-transition-stand-timing;
-
-  &:after {
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: md-get-palette-color(purple, 200);
-    content: " ";
-  }
+.md-progress-bar {
+  margin: 24px;
 }
 </style>
