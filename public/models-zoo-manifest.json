@@ -71,12 +71,12 @@
       "license": "",
       "license-url": "",
       "email": "",
-      "source": "https://kth.box.com/s/y6xc7ok4dy76sbza4llh90uwunda9lj9",
+      "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/wair",
       "docker": "",
       "models": [],
       "description": "Seven CNN models, using multiple different architectures, ensembled through averaging.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/9cf9f4509db7a6ddee73a3c15f117756/raw/84d645797d389cc2dfce5ac8b3e8c58baaf80204/README.md"
+      "readme": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/wair/README.md"
     },
     {
       "name": "HPA-model-pudae",
