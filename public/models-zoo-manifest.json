@@ -157,7 +157,7 @@
       "license": "MIT",
       "license-url": "https://opensource.org/licenses/MIT",
       "email": "",
-      "source": "",
+      "source": "https://kth.box.com/s/12k7y6xf0xfqsqoq6op4ihic88ddhali",
       "docker": "",
       "models": [],
       "description": "An ensemble of seven CNN models and a multi-layer perceptron network, using image augmentation, multi scales, weighted sampling and MultiLabelSoftMargin loss.",
