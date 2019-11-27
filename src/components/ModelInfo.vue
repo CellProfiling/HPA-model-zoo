@@ -1,26 +1,28 @@
 <template>
-  <div class="md-layout md-gutter md-alignment-center">
-    <div>
+  <div class="info-markdown">
+    <div class="md-layout md-gutter md-alignment-left">
       <div>
-        <md-card-header>
-          <div v-if="modelInfo" class="md-title">{{ modelInfo.name }}</div>
-        </md-card-header>
+        <div>
+          <md-card-header>
+            <div v-if="modelInfo" class="md-title">{{ modelInfo.name }}</div>
+          </md-card-header>
+        </div>
+        <div>
+          <md-chip v-if="modelInfo && modelInfo.framework" class="md-accent">{{
+            modelInfo.framework
+          }}</md-chip>
+          <md-chip v-for="author in authors" :key="author" class="md-primary">{{
+            author
+          }}</md-chip>
+        </div>
+        <!-- eslint-disable vue/no-v-html -->
+        <div
+          v-if="docs"
+          style="padding-left: 10px; padding-right: 5px;"
+          v-html="docs"
+        ></div>
+        <md-progress-bar v-else md-mode="indeterminate"></md-progress-bar>
       </div>
-      <div>
-        <md-chip v-if="modelInfo && modelInfo.framework" class="md-accent">{{
-          modelInfo.framework
-        }}</md-chip>
-        <md-chip v-for="author in authors" :key="author" class="md-primary">{{
-          author
-        }}</md-chip>
-      </div>
-      <!-- eslint-disable vue/no-v-html -->
-      <div
-        v-if="docs"
-        style="padding-left: 10px; padding-right: 5px;"
-        v-html="docs"
-      ></div>
-      <md-progress-bar v-else md-mode="indeterminate"></md-progress-bar>
     </div>
   </div>
 </template>
@@ -65,6 +67,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.info-markdown {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 5px;
+}
 .md-progress-bar {
   margin: 24px;
 }
