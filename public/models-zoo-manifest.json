@@ -94,12 +94,12 @@
       "license": "",
       "license-url": "",
       "email": "",
-      "source": "https://kth.box.com/s/8w67epq680y3pwq6ggudftp8l3e91iyt",
+      "source": "https://github.com/CellProfiling/pudae-kaggle-hpa",
       "docker": "",
       "models": [],
       "description": "An ensemble using focal loss, per image normalization and spatial attention.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/20a4a0e9c2f142d745442e82cb191818/raw/156a4d89bbb48c089f6301ea0f3248df6b96c716/README.md"
+      "readme": "https://raw.githubusercontent.com/CellProfiling/pudae-kaggle-hpa/master/README.md"
     },
     {
       "name": "HPA-model-wienerschnitzelgemeinschaft",
