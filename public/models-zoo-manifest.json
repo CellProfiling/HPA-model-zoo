@@ -211,7 +211,7 @@
       "license": "MIT",
       "license-url": "https://opensource.org/licenses/MIT",
       "email": "",
-      "source": "",
+      "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/conv_is_all_you_need",
       "docker": "",
       "models": [],
       "description": "An ensemble of a cropping window CNN based on Xception, and two conventional CNNs based on SE-ResNext50 and InceptionV3.",
