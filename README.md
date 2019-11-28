@@ -9,7 +9,7 @@ A collection of deep learning models for analyzing the Human Protein Atlas image
 * [HPA-model-bestfitting](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/bestfitting)
 * [HPA-model-WAIR](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/wair)
 * [HPA-model-pudae](https://github.com/CellProfiling/pudae-kaggle-hpa)
-* [HPA-model-wienerschnitzelgemeinschaft](https://kth.box.com/s/hcs1aydkx5q9hb5ynxfyn3qbwl0izj9x)
+* [HPA-model-wienerschnitzelgemeinschaft](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/wienerschnitzelgemeinschaft)
 * [HPA-model-vpp](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/vpp)
 * HPA-model-One More Layer
 * [HPA-model-conv is all you need](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/conv_is_all_you_need)
