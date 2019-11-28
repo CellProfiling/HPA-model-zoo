@@ -185,12 +185,12 @@
       "license": "",
       "license-url": "",
       "email": "",
-      "source": "",
+      "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/one_more_layer_of_stacking",
       "docker": "",
       "models": [],
       "description": "14 CNN models ensembled via LightGBM stacking, optimized with Wadam, using focal and LSEP loss.",
       "icon": "",
-      "readme": "https://gist.githubusercontent.com/MartinHjelmare/a7ce9ae7ce1b65f2ed99c7f3e4c2e262/raw/d830494c2d22759f081ad3b014ba68378938b7db/README.md"
+      "readme": "https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/one_more_layer_of_stacking/README.md"
     },
     {
       "name": "HPA-model-conv is all you need",
