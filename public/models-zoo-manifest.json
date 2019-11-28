@@ -68,8 +68,8 @@
         "Jun Lan"
       ],
       "citeAs": "",
-      "license": "",
-      "license-url": "",
+      "license": "MIT",
+      "license-url": "https://opensource.org/licenses/MIT",
       "email": "",
       "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/wair",
       "docker": "",
@@ -128,8 +128,8 @@
         "Russ Wolfinger"
       ],
       "citeAs": "",
-      "license": "",
-      "license-url": "",
+      "license": "MIT",
+      "license-url": "https://opensource.org/licenses/MIT",
       "email": "",
       "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/wienerschnitzelgemeinschaft",
       "docker": "",
@@ -182,8 +182,8 @@
         "Dmytro Panchenko"
       ],
       "citeAs": "",
-      "license": "",
-      "license-url": "",
+      "license": "MIT",
+      "license-url": "https://opensource.org/licenses/MIT",
       "email": "",
       "source": "https://github.com/CellProfiling/HPA-competition-solutions/tree/master/one_more_layer_of_stacking",
       "docker": "",
