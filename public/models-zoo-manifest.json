@@ -66,8 +66,8 @@
         "Park Jinmo"
       ],
       "citeAs": "",
-      "license": "",
-      "license-url": "",
+      "license": "BSD-2-Clause",
+      "license-url": "https://opensource.org/licenses/BSD-2-Clause",
       "email": "",
       "source": "https://github.com/CellProfiling/pudae-kaggle-hpa",
       "docker": "",
