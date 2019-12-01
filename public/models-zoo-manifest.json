@@ -3,31 +3,6 @@
   "version": "0.1.0",
   "models": [
     {
-      "name": "HPA-model-example",
-      "tags": [
-        "classification"
-      ],
-      "framework": "tensorflow",
-      "author": [
-        "Gordon MacMillan"
-      ],
-      "citeAs": "",
-      "license": "MIT",
-      "license-url": "https://opensource.org/licenses/MIT",
-      "email": "",
-      "source": "https://github.com/oeway/HPA-model-example",
-      "docker": "",
-      "models": [
-        "resnet-34",
-        "resnet-50",
-        "resnet-101",
-        "resnet-152"
-      ],
-      "description": "Using Kubeflow and Kubernetes to distribute training of a classifier for sub-cellular protein patterns in human cells.",
-      "icon": "",
-      "readme": "https://raw.githubusercontent.com/oeway/HPA-model-example/master/README.md"
-    },
-    {
       "name": "HPA-model-bestfitting",
       "tags": [
         "classification",
