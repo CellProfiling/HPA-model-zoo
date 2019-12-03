@@ -55,6 +55,10 @@ export default {
     this.modelsById = this.store.modelsById;
     this.modelInfo = this.modelsById[this.$route.params.id];
     loadContent(this.modelInfo.readme, this.updateDocs);
+    window.gtag("config", "UA-153763911-1", {
+      page_title: this.$route.params.id,
+      page_path: "/model/" + this.$route.params.id,
+    });
   },
   methods: {
     updateDocs(data) {
