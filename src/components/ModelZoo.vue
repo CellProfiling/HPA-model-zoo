@@ -10,22 +10,24 @@
         <div class="md-title">{{ m.name }}</div>
       </md-card-header>
 
-      <md-card-content>
-        {{ m.description }}
-      </md-card-content>
+      <md-card-content>{{ m.description }}</md-card-content>
       <md-card-content>
         <md-chip class="md-accent">{{ m.framework }}</md-chip>
         <md-chip v-if="m.license" class="md-primary">{{ m.license }}</md-chip>
       </md-card-content>
       <md-card-content>
-        <md-chip v-for="tag in m.tags" :key="tag" class="md-primary">{{
-          tag
-        }}</md-chip>
+        <md-chip v-for="tag in m.tags" :key="tag" class="md-primary">
+          {{ tag }}
+        </md-chip>
       </md-card-content>
 
       <md-card-actions>
         <md-button @click="showDetails(m.name)">Details</md-button>
-        <md-button v-if="m.source" target="_blank" :href="m.source"
+        <md-button
+          v-if="m.source"
+          target="_blank"
+          :href="m.source"
+          @click="trackDownload(m.name)"
           >Get Model</md-button
         >
       </md-card-actions>
@@ -65,10 +67,21 @@ export default {
       this.models = models;
     });
   },
-  mounted() {},
+  mounted() {
+    window.gtag("config", "UA-153763911-1", {
+      page_title: "home",
+      page_path: "/home",
+    });
+  },
   methods: {
     showDetails(id) {
       this.$router.push({ path: "/model/" + id });
+    },
+    trackDownload(modelName) {
+      window.gtag("config", "UA-153763911-1", {
+        page_title: modelName,
+        page_path: "/" + modelName,
+      });
     },
   },
 };
