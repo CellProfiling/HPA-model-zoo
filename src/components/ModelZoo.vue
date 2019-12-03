@@ -80,7 +80,7 @@ export default {
     trackDownload(modelName) {
       window.gtag("config", "UA-153763911-1", {
         page_title: modelName,
-        page_path: "/" + modelName,
+        page_path: "/download/" + modelName,
       });
     },
   },
