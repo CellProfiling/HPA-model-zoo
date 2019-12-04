@@ -85,7 +85,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .md-layout-item {
-  width: 320px;
+  width: 420px;
   margin-top: 8px;
   margin-bottom: 8px;
   transition: 0.3s $md-transition-stand-timing;
