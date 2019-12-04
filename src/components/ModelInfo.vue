@@ -80,7 +80,6 @@ export default {
   text-align: left;
   padding-left: 10px;
   padding-right: 5px;
-  max-width: 100%;
 }
 .md-progress-bar {
   margin: 24px;
