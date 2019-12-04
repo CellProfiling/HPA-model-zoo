@@ -88,14 +88,5 @@ export default {
   width: 420px;
   margin-top: 8px;
   margin-bottom: 8px;
-  transition: 0.3s $md-transition-stand-timing;
-
-  &:after {
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: md-get-palette-color(purple, 200);
-    content: " ";
-  }
 }
 </style>
