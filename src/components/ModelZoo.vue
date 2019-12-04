@@ -15,11 +15,6 @@
         <md-chip class="md-accent">{{ m.framework }}</md-chip>
         <md-chip v-if="m.license" class="md-primary">{{ m.license }}</md-chip>
       </md-card-content>
-      <md-card-content>
-        <md-chip v-for="tag in m.tags" :key="tag" class="md-primary">
-          {{ tag }}
-        </md-chip>
-      </md-card-content>
 
       <md-card-actions>
         <md-button @click="showDetails(m.name)">Details</md-button>
