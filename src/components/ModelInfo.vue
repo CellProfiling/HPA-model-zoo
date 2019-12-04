@@ -7,13 +7,18 @@
             <div v-if="modelInfo" class="md-title">{{ modelInfo.name }}</div>
           </md-card-header>
         </div>
-        <div>
+        <div class="md-layout-item">
           <md-chip v-if="modelInfo && modelInfo.framework" class="md-accent">{{
             modelInfo.framework
           }}</md-chip>
           <md-chip v-for="author in authors" :key="author" class="md-primary">{{
             author
           }}</md-chip>
+        </div>
+        <div v-if="modelInfo" class="md-layout-item">
+          <md-chip v-for="tag in modelInfo.tags" :key="tag">
+            {{ tag }}
+          </md-chip>
         </div>
         <!-- eslint-disable vue/no-v-html -->
         <div
@@ -78,5 +83,9 @@ export default {
 }
 .md-progress-bar {
   margin: 24px;
+}
+.md-layout-item {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 </style>
