@@ -27,6 +27,14 @@
         >
       </md-card-actions>
     </md-card>
+    <md-dialog-confirm
+      :md-active.sync="showGoToDialog"
+      md-title="Notice"
+      md-content="Hi there, we decided to host the HPA classification models in BioImage.IO -- a dedicated platform for hosting AI models for bioimage analysis. <br> Please check it out!"
+      md-confirm-text="Go to BioImage.IO"
+      md-cancel-text="Stay here"
+      @md-confirm="goToBioImageIO"
+    />
   </div>
 </template>
 
@@ -54,6 +62,7 @@ export default {
     return {
       models: [empty_model],
       showDetailsDialog: false,
+      showGoToDialog: true,
     };
   },
   created() {
@@ -69,6 +78,9 @@ export default {
     });
   },
   methods: {
+    goToBioImageIO() {
+      window.location.href = "https://bioimage.io/#/?partner=hpa";
+    },
     showDetails(id) {
       this.$router.push({ path: "/model/" + id });
     },
