@@ -66,7 +66,7 @@ model:
       - se-resnext-50
       - xception
     framework: pytorch
-    author:
+    authors:
       - Jun Lan
     license: MIT
     git_repo: >-
@@ -88,7 +88,7 @@ model:
       - resnet-34
       - se-resnext-50
     framework: pytorch
-    author:
+    authors:
       - Park Jinmo
     license: BSD-2-Clause
     git_repo: 'https://github.com/CellProfiling/pudae-kaggle-hpa'
@@ -118,7 +118,7 @@ model:
       - resnet-101
       - se-resnext-50
     framework: pytorch
-    author:
+    authors:
       - Shaikat Mahmood Galib
       - Christof Henkel
       - Kevin Hwang
@@ -146,7 +146,7 @@ model:
       - multilayer-perceptron
       - xception
     framework: pytorch
-    author:
+    authors:
       - Yinzheng Gu
       - Chuanpeng Li
       - Jinbin Xie
@@ -172,7 +172,7 @@ model:
       - se-resnext-50
       - xception
     framework: pytorch
-    author:
+    authors:
       - Dmitry Buslov
       - Sergei Fironov
       - Alexander Kiselev
@@ -197,7 +197,7 @@ model:
       - se-resnext-50
       - xception
     framework: pytorch
-    author:
+    authors:
       - Xuan Cao
       - Runmin Wei
       - Yuanhao Wu
@@ -220,7 +220,7 @@ model:
       - classification
       - resnet-34
     framework: tensorflow
-    author:
+    authors:
       - Kuan-Lun Tseng
     license: MIT
     git_repo: >-
@@ -241,7 +241,7 @@ model:
       - classification
       - resnet-18
     framework: pytorch
-    author:
+    authors:
       - Zhifeng Gao
       - Cheng Ju
       - Xiaohan Yi
