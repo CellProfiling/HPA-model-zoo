@@ -1,0 +1,28 @@
+format_version: 0.2.0
+config:
+  id: hpa
+  name: HPA
+  tags:
+    - hpa
+  logo: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/hpa-logo.gif
+  icon: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/hpa-logo.gif
+  splash_title: The Human Protein Atlas
+  splash_subtitle: 
+  splash_feature_list: []
+  explore_button_text: Start Exploring
+  background_image: static/img/zoo-background.svg
+  resource_types:
+    - model
+    - application
+  default_type: model
+  url_root: https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master
+
+application:
+  - id: HPA-Classification
+    source: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/HPA-Classification.imjoy.html
+
+model:
+  - id: HPAShuffleNetV2
+    source: https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.model.yaml
+    links:
+        - HPA-Classification
