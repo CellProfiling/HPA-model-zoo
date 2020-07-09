@@ -39,6 +39,7 @@ model:
     framework: pytorch
     authors:
       - Shubin Dai
+    license: MIT
     cite: null
     source: >-
       https://github.com/CellProfiling/HPA-competition-solutions/tree/master/bestfitting
