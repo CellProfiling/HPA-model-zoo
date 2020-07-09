@@ -5,8 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "check-format": "prettier --check \"{scripts,src,tests}/**/!(*@(.png))\"",
-    "format": "prettier --write \"{scripts,src,tests}/**/!(*@(.png))\"",
+    "check-format": "prettier --check \"{scripts,src,tests}/**/!(*@(.png|.py))\"",
+    "format": "prettier --write \"{scripts,src,tests}/**/!(*@(.png|.py))\"",
     "lint": "vue-cli-service lint",
     "deploy": "npm run build && node scripts/deploy.js"
   },
@@ -21,6 +21,7 @@
     "vuelidate": "^0.7.5"
   },
   "devDependencies": {
+    "@babel/compat-data": "^7.9.0",
     "@vue/cli-plugin-babel": "^4.2.3",
     "@vue/cli-plugin-eslint": "^4.2.3",
     "@vue/cli-plugin-router": "^4.2.3",
