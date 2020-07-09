@@ -52,6 +52,8 @@ model:
       - label: HPA Competition
         ext: 1st
         url: https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard
+    covers:
+      - https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/bestfitting/src/bestfitting-densenet-diagram.png
   - id: HPA-WAIR
     name: HPA-WAIR
     tags:
