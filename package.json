@@ -21,6 +21,7 @@
     "vuelidate": "^0.7.5"
   },
   "devDependencies": {
+    "@babel/compat-data": "^7.9.0",
     "@vue/cli-plugin-babel": "^4.2.3",
     "@vue/cli-plugin-eslint": "^4.2.3",
     "@vue/cli-plugin-router": "^4.2.3",
