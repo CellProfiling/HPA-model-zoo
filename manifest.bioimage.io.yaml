@@ -41,7 +41,7 @@ model:
       - Shubin Dai
     license: MIT
     cite: null
-    source: >-
+    git_repo: >-
       https://github.com/CellProfiling/HPA-competition-solutions/tree/master/bestfitting
     description: >-
       A CNN model using focal loss and image augmentation, optimized with Adam
@@ -69,7 +69,7 @@ model:
     author:
       - Jun Lan
     license: MIT
-    source: >-
+    git_repo: >-
       https://github.com/CellProfiling/HPA-competition-solutions/tree/master/wair
     description: >-
       Seven CNN models, using multiple different architectures, ensembled
@@ -91,7 +91,7 @@ model:
     author:
       - Park Jinmo
     license: BSD-2-Clause
-    source: 'https://github.com/CellProfiling/pudae-kaggle-hpa'
+    git_repo: 'https://github.com/CellProfiling/pudae-kaggle-hpa'
     description: >-
       An ensemble using focal loss, per image normalization and spatial
       attention.
@@ -126,7 +126,7 @@ model:
       - Bojan Tunguz
       - Russ Wolfinger
     license: MIT
-    source: >-
+    git_repo: >-
       https://github.com/CellProfiling/HPA-competition-solutions/tree/master/wienerschnitzelgemeinschaft
     description: >-
       An ensemble of diverse and highly optimized CNN models, using hill
@@ -151,7 +151,7 @@ model:
       - Chuanpeng Li
       - Jinbin Xie
     license: MIT
-    source: 'https://github.com/CellProfiling/HPA-competition-solutions/tree/master/vpp'
+    git_repo: 'https://github.com/CellProfiling/HPA-competition-solutions/tree/master/vpp'
     description: >-
       An ensemble of seven CNN models and a multi-layer perceptron network,
       using image augmentation, multi scales, weighted sampling and
@@ -178,7 +178,7 @@ model:
       - Alexander Kiselev
       - Dmytro Panchenko
     license: MIT
-    source: >-
+    git_repo: >-
       https://github.com/CellProfiling/HPA-competition-solutions/tree/master/one_more_layer_of_stacking
     description: >-
       14 CNN models ensembled via LightGBM stacking, optimized with Wadam, using
@@ -203,7 +203,7 @@ model:
       - Yuanhao Wu
       - Xun Zhu
     license: MIT
-    source: >-
+    git_repo: >-
       https://github.com/CellProfiling/HPA-competition-solutions/tree/master/conv_is_all_you_need
     description: >-
       An ensemble of a cropping window CNN based on Xception, and two
@@ -223,7 +223,7 @@ model:
     author:
       - Kuan-Lun Tseng
     license: MIT
-    source: >-
+    git_repo: >-
       https://github.com/CellProfiling/HPA-competition-solutions/tree/master/ntu_mira
     description: >-
       A CNN with large input size (1024 ⨉ 1024 px) using fixed
@@ -247,7 +247,7 @@ model:
       - Xiaohan Yi
       - Hongdong Zheng
     license: MIT
-    source: >-
+    git_repo: >-
       https://github.com/CellProfiling/HPA-competition-solutions/tree/master/random_walk
     description: >-
       An ensemble model of three different resolutions based on single attention
