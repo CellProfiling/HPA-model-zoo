@@ -53,6 +53,7 @@ model:
         ext: 1st
         url: https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard
     covers:
+      - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
       - https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/bestfitting/src/bestfitting-densenet-diagram.png
   - id: HPA-WAIR
     name: HPA-WAIR
@@ -80,6 +81,8 @@ model:
       - label: HPA Competition
         ext: 2nd
         url: https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard
+    covers:
+      - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
   - id: HPA-pudae
     name: HPA-pudae
     tags:
@@ -101,6 +104,8 @@ model:
       - label: HPA Competition
         ext: 3rd
         url: https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard
+    covers:
+      - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
   - id: HPA-wienerschnitzelgemeinschaft
     name: HPA-wienerschnitzelgemeinschaft
     tags:
@@ -137,6 +142,8 @@ model:
       - label: HPA Competition
         ext: 4th
         url: https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard
+    covers:
+      - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
   - id: HPA-vpp
     name: HPA-vpp
     tags:
@@ -162,6 +169,8 @@ model:
       - label: HPA Competition
         ext: 5th
         url: https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard
+    covers:
+      - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
   - id: HPA-One-More
     name: HPA-One More Layer Of Stacking
     tags:
@@ -189,6 +198,8 @@ model:
       - label: HPA Competition
         ext: 8th
         url: https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard
+    covers:
+      - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
   - id: HPA-conv
     name: HPA-conv is all you need
     tags:
@@ -214,6 +225,8 @@ model:
       - label: HPA Competition
         ext: 10th
         url: https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard
+    covers:
+      - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
   - id: HPA-NTU_MiRA
     name: HPA-NTU_MiRA
     tags:
@@ -234,6 +247,8 @@ model:
       - label: HPA Competition
         ext: 16th
         url: https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard
+    covers:
+      - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
   - id: HPA-Random-Walk
     name: HPA-Random Walk
     tags:
@@ -258,3 +273,6 @@ model:
       - label: HPA Competition
         ext: 38th
         url: https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard
+    covers:
+      - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
+
