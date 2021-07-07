@@ -22,7 +22,7 @@ config:
 application:
   - id: HPA-Classification
     source: >-
-      https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/apps/HPA-Classification.imjoy.html
+      https://raw.githubusercontent.com/imjoy-team/imjoy-plugins/master/repository/HPA-Classification.imjoy.html
 
 model:
   - id: HPAShuffleNetV2
