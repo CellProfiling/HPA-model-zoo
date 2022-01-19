@@ -30,7 +30,7 @@ collection:
       https://raw.githubusercontent.com/imjoy-team/imjoy-plugins/master/repository/HPA-Classification.imjoy.html
   - id: HPAShuffleNetV2
     type: model
-    source: >-
+    rdf_source: >-
       https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.model.yaml
     links:
       - HPA-Classification
