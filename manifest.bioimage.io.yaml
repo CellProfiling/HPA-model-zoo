@@ -1,4 +1,8 @@
-format_version: 0.2.0
+format_version: 0.2.2
+type: collection
+name: HPA Collection
+tags: [hpa, bioimage.io]
+description: "Resources for BioImgage.IO curated by the the cellprofiling group at HPA."
 config:
   id: hpa
   name: HPA
@@ -19,18 +23,19 @@ config:
     - application
   default_type: model
 
-application:
+collection:
   - id: HPA-Classification
+    type: application
     source: >-
       https://raw.githubusercontent.com/imjoy-team/imjoy-plugins/master/repository/HPA-Classification.imjoy.html
-
-model:
   - id: HPAShuffleNetV2
+    type: model
     source: >-
       https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.model.yaml
     links:
       - HPA-Classification
   - id: HPA-bestfitting
+    type: model
     name: HPA-bestfitting
     tags:
       - classification
@@ -58,6 +63,7 @@ model:
       - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
       - https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/bestfitting/src/bestfitting-densenet-diagram.png
   - id: HPA-WAIR
+    type: model
     name: HPA-WAIR
     tags:
       - classification
@@ -86,6 +92,7 @@ model:
     covers:
       - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
   - id: HPA-pudae
+    type: model
     name: HPA-pudae
     tags:
       - classification
@@ -109,6 +116,7 @@ model:
     covers:
       - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
   - id: HPA-wienerschnitzelgemeinschaft
+    type: model
     name: HPA-wienerschnitzelgemeinschaft
     tags:
       - airnet-50
@@ -147,6 +155,7 @@ model:
     covers:
       - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
   - id: HPA-vpp
+    type: model
     name: HPA-vpp
     tags:
       - classification
@@ -174,6 +183,7 @@ model:
     covers:
       - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
   - id: HPA-One-More
+    type: model
     name: HPA-One More Layer Of Stacking
     tags:
       - bn-inception
@@ -203,6 +213,7 @@ model:
     covers:
       - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
   - id: HPA-conv
+    type: model
     name: HPA-conv is all you need
     tags:
       - classification
@@ -230,6 +241,7 @@ model:
     covers:
       - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
   - id: HPA-NTU_MiRA
+    type: model
     name: HPA-NTU_MiRA
     tags:
       - classification
@@ -252,6 +264,7 @@ model:
     covers:
       - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
   - id: HPA-Random-Walk
+    type: model
     name: HPA-Random Walk
     tags:
       - attention-gate
