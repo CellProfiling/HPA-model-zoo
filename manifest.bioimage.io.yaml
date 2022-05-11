@@ -26,6 +26,7 @@ config:
 collection:
   - id: HPA-Classification
     type: application
+    documentation: https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/collection/hpa-classification-app.md
     source: >-
       https://raw.githubusercontent.com/imjoy-team/imjoy-plugins/master/repository/HPA-Classification.imjoy.html
   - id: HPAShuffleNetV2
