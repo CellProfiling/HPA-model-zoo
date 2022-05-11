@@ -29,12 +29,12 @@ collection:
     documentation: https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/collection/hpa-classification-app.md
     source: >-
       https://raw.githubusercontent.com/imjoy-team/imjoy-plugins/master/repository/HPA-Classification.imjoy.html
-  - id: HPAShuffleNetV2
-    type: model
-    rdf_source: >-
-      https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.model.yaml
-    links:
-      - HPA-Classification
+#   - id: HPAShuffleNetV2
+#     type: model
+#     rdf_source: >-
+#       https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.model.yaml
+#     links:
+#       - HPA-Classification
   - id: hpa-cell-image-segmentation-dataset
     authors:
     - {name: Jay Kaimal}
