@@ -34,34 +34,65 @@ collection:
       https://raw.githubusercontent.com/bioimage-io/tfjs-bioimage-io/master/models/HPAShuffleNetV2/HPAShuffleNetV2.model.yaml
     links:
       - HPA-Classification
-  - id: HPA-bestfitting
-    type: model
-    name: HPA-bestfitting
-    tags:
-      - classification
-      - densenet-121
-      - inception-v3
-      - resnet-34
-      - resnet-50
-    framework: pytorch
+  - id: hpa-cell-image-segmentation-dataset
     authors:
-      - Shubin Dai
-    license: MIT
-    cite: null
-    git_repo: >-
-      https://github.com/CellProfiling/HPA-competition-solutions/tree/master/bestfitting
-    description: >-
-      A CNN model using focal loss and image augmentation, optimized with Adam
-      optimizer.
-    documentation: >-
-      https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/bestfitting/README.md
-    badges:
-      - label: HPA Competition
-        ext: 1st
-        url: https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard
-    covers:
-      - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
-      - https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/bestfitting/src/bestfitting-densenet-diagram.png
+    - {name: Jay Kaimal}
+    - {name: Peter Thul}
+    - {name: Hao Xu}
+    - {name: Wei Ouyang}
+    - {name: Emma Lundberg}
+    cite:
+    - {doi: 'https://doi.org/10.5281/zenodo.4665863', text: 'Kaimal et al.'}
+    covers: ['https://zenodo.org/api/files/a24a1e8a-cdc5-4b56-b9c3-0b82417e74a5/hpaseg-cover.png']
+    description: Annotated images from the Human Protein Atlas for cell segmentation
+    documentation: https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/collection/hpa-cell-image-segmentation-dataset.md
+    format_version: 0.2.1
+    license: CC-BY-4.0
+    name: HPA Cell Image Segmentation Dataset
+    source: https://zenodo.org/record/4665863
+    tags: [fluorescence-light-microscopy, 2D, cells, nuclei, semantic-segmentation, instance-segmentation]
+    type: dataset
+  - id: hpa-kaggle-2021-dataset
+    authors:
+    - {name: The Human Protein Atlas}
+    cite: []
+    covers: ['https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/collection/hpa-single-cell-classification.png']
+    description: Training dataset for the Human Protein Atlas Single Cell Classification competition 2021
+    documentation: https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/collection/hpa-single-cell-classification.md
+    format_version: 0.2.1
+    license: CC-BY-4.0
+    name: HPA Single Cell Classification Dataset 2021
+    source: https://www.kaggle.com/competitions/hpa-single-cell-image-classification/data
+    tags: [fluorescence-light-microscopy, 2D, cells, nuclei, protein, classification]
+    type: dataset
+#   - id: HPA-bestfitting
+#     type: model
+#     name: HPA-bestfitting
+#     tags:
+#       - classification
+#       - densenet-121
+#       - inception-v3
+#       - resnet-34
+#       - resnet-50
+#     framework: pytorch
+#     authors:
+#       - Shubin Dai
+#     license: MIT
+#     cite: null
+#     git_repo: >-
+#       https://github.com/CellProfiling/HPA-competition-solutions/tree/master/bestfitting
+#     description: >-
+#       A CNN model using focal loss and image augmentation, optimized with Adam
+#       optimizer.
+#     documentation: >-
+#       https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/bestfitting/README.md
+#     badges:
+#       - label: HPA Competition
+#         ext: 1st
+#         url: https://www.kaggle.com/c/human-protein-atlas-image-classification/leaderboard
+#     covers:
+#       - https://raw.githubusercontent.com/CellProfiling/HPA-model-zoo/master/hpa_challenge_header.png
+#       - https://raw.githubusercontent.com/CellProfiling/HPA-competition-solutions/master/bestfitting/src/bestfitting-densenet-diagram.png
 #   - id: HPA-WAIR
 #     type: model
 #     name: HPA-WAIR
