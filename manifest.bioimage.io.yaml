@@ -52,6 +52,7 @@ collection:
     name: HPA Cell Image Segmentation Dataset
     source: https://zenodo.org/record/4665863
     tags: [fluorescence-light-microscopy, 2D, cells, nuclei, semantic-segmentation, instance-segmentation]
+    download_url: https://zenodo.org/record/4665863/files/hpa_cell_segmentation_dataset_v2_512x512_4train_159test.zip?download=1
     type: dataset
   - id: hpa-kaggle-2021-dataset
     authors:
@@ -65,6 +66,7 @@ collection:
     name: HPA Single Cell Classification Dataset 2021
     source: https://www.kaggle.com/competitions/hpa-single-cell-image-classification/data
     tags: [fluorescence-light-microscopy, 2D, cells, nuclei, protein, classification]
+    download_url: https://www.kaggle.com/competitions/hpa-single-cell-image-classification/data
     type: dataset
 #   - id: HPA-bestfitting
 #     type: model
