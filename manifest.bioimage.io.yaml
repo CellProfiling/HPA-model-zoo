@@ -22,7 +22,16 @@ config:
     - model
     - application
   default_type: model
-
+  docs: https://www.proteinatlas.org/about
+  contact:
+    - name: Frederic Ballllosera Navarro
+      email: fredbn@stanford.edu
+      github: OmFrederic
+      affiliation:
+        - name: KTH
+          url: https://kth.se
+        - name: Stanford
+          url: https://stanford.edu
 collection:
   - id: HPA-Classification
     type: application
