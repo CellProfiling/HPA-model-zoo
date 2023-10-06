@@ -11,7 +11,7 @@
     "deploy": "npm run build && node scripts/deploy.js"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "dompurify": "^2.0.17",
     "file-saver": "^2.0.2",
     "marked": "^0.7.0",
